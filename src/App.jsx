@@ -20,6 +20,8 @@ import Quote from './pages/quote';
 import CommonJs from './components/commonJs';
 import Industry from './pages/industries/industry';
 import Box_style from './pages/box-Style/box_style';
+import Login from './pages/Auth/login';
+import Signup from './pages/Auth/signup';
 //----------- Routes-import ------
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 
@@ -37,6 +39,9 @@ function App() {
   <Route exact path="quote" element={<Quote/>} />
   <Route exact path="industry" element={<Industry/>} />
   <Route exact path="box_style" element={<Box_style/>} />
+
+  <Route exact path='login' element={<Login/>} />
+  <Route exact path='signup' element={<Signup/>} />
   </Routes>
   <Footer/>
   <CommonJs/>

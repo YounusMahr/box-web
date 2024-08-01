@@ -141,15 +141,8 @@ $('a.btn_search_mob').on("click", function () {
         </div>
         <div className="col-md-4">
           <div className="float-end float-mobile-none-text-center">
-            <a href="login/index.html" style={{ color: "#fff" }}>
-              Login
-            </a>
-            <a
-              href="register/index.html"
-              style={{ color: "#fff", padding: "0px 10px" }}
-            >
-              Sign-up
-            </a>
+            {/* <Link to={login} style={{ color: "#fff" }}>Login</Link>
+            <Link to={signup} style={{ color: "#fff", padding: "0px 10px" }}>Sing-up</Link> */}
             <span style={{ fontSize: 12, fontWeight: 500, color: "#fff" }}>
               Call us Toll Free
             </span>

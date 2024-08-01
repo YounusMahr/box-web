@@ -4,6 +4,10 @@ import blueline from '../assets/front/blue-z.svg';
 import brandline from '../assets/front/brand_line.webp';
 
 import retailboxes from '../assets/uploads_f/1713980563.Worth-Ravishing-Custom-Retail-Boxes.webp'
+import ecoboxes from '../assets/uploads_f/1708525324.Worth-Ravishing-Custom-Eco-Friendly-Boxes.webp'
+import cardboxes from '../assets/uploads_f/1708525390.Worth-Ravishing-Custom-Cardboard-Packaging.webp'
+import rigidboxes from '../assets/uploads_f/1708525446.Worth-Ravishing-Custom-Rigid-Boxes.webp'
+
 function home() {
   return (
  <>
@@ -152,7 +156,7 @@ function home() {
               <div className="col-md-6">
                 <div className="slide-left text-end">
                   <img
-                    src="uploads_f/1708525324.Worth-Ravishing-Custom-Eco-Friendly-Boxes.webp"
+                    src={ecoboxes}
                     className="carousel_home_image lazyload"
                     alt="Worth Ravishing Custom Eco Friendly Boxes"
                     width={800}
@@ -217,7 +221,7 @@ function home() {
               <div className="col-md-6">
                 <div className="slide-left text-end">
                   <img
-                    src="uploads_f/1708525390.Worth-Ravishing-Custom-Cardboard-Packaging.webp"
+                    src={cardboxes}
                     className="carousel_home_image lazyload"
                     alt="Worth Ravishing Custom Cardboard Packaging"
                     width={800}
@@ -282,7 +286,7 @@ function home() {
               <div className="col-md-6">
                 <div className="slide-left text-end">
                   <img
-                    src="uploads_f/1708525446.Worth-Ravishing-Custom-Rigid-Boxes.webp"
+                    src={rigidboxes}
                     className="carousel_home_image lazyload"
                     alt="Worth Ravishing Custom Rigid Boxes"
                     width={800}
