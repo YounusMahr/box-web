@@ -2,8 +2,9 @@ import React from 'react'
 
 function login() {
   return (
-    <div>
+    
         <>
+       
   <div className="login-box" style={{ margin: "7% auto", width: 550 }}>
     {/* /.login-logo */}
     <div
@@ -190,13 +191,11 @@ function login() {
     </div>
     {/* /.card */}
   </div>
-  {/* /.login-box */}
-  {/* Mobile Menu End */}
-  
+
 
 </>
 
-    </div>
+ 
   )
 }
 

@@ -1,8 +1,11 @@
 import React from 'react'
-
+import Header from '../../components/header';
+import Footer from '../../components/footer';
 function industry() {
   return (
     <div>
+    
+
         <div id="page">
   {/* /header */}
   <main>
@@ -12,7 +15,7 @@ function industry() {
       <section
         className=""
         id="yourDivId"
-        style={{ backgroundColor: "#0074bd" }}
+        style={{ backgroundColor: "#e47911" }}
       >
         <div className="container">
           <div className="breadcrumbs">
@@ -6941,7 +6944,7 @@ function industry() {
     {/*/footer*/}
   </main>
 </div>
-
+   
     </div>
   )
 }

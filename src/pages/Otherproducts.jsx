@@ -1,13 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 function Otherproducts() {
   return (
     <div>
+      
         <div id="page">
   {/* Mobile Menu start */}
   {/* Mobile Menu End */}
   <main>
-    <section className="" id="yourDivId" style={{ backgroundColor: "#0074bd" }}>
+    <section className="" id="yourDivId" style={{ backgroundColor: "#e47911" }}>
       <div className="container">
         <div className="breadcrumbs">
           <ul>

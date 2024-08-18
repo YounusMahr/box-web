@@ -22,6 +22,10 @@ import Industry from './pages/industries/industry';
 import Box_style from './pages/box-Style/box_style';
 import Login from './pages/Auth/login';
 import Signup from './pages/Auth/signup';
+import Cardbox from './pages/industries/cardbox';
+import Bottom_closure from './pages/box-Style/bottom_closure';
+import Blog from './pages/blog';
+import About from './pages/about';
 //----------- Routes-import ------
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 
@@ -29,7 +33,6 @@ function App() {
  
   return (
   <>
-     <div id="root">
   <Header/>
   <Routes>
   <Route exact path="/" element={<Home/>} />
@@ -38,14 +41,16 @@ function App() {
   <Route exact path="store" element={<Store/>} />
   <Route exact path="quote" element={<Quote/>} />
   <Route exact path="industry" element={<Industry/>} />
+  <Route exact path="industry/card_box" element={<Cardbox/>} />
   <Route exact path="box_style" element={<Box_style/>} />
-
-  <Route exact path='login' element={<Login/>} />
-  <Route exact path='signup' element={<Signup/>} />
+  <Route exact path="box_style/bottom_closure" element={<Bottom_closure/>} />
+  <Route exact path="blog" element={<Blog/>} />
+  <Route exact path="about-us" element={<About/>} />
+  {/* //--- Login & signup ------ */}
+  <Route exact path="auth/login" element={<Login/>} />
+  <Route exact path="auth/signup" element={<Signup/>} />
   </Routes>
   <Footer/>
-  <CommonJs/>
-  </div>
   </>
   )
 }

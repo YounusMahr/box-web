@@ -1,19 +1,21 @@
 import React from 'react'
-
+import Header from '../../components/header';
+import Footer from '../../components/footer';
 function box_style() {
   return (
     <div>
+  
         <div id="page">
   {/* /header */}
   <main>
     {/* Mobile Menu start */}
     {/* Mobile Menu End */}
-    &gt;
+  
     <main>
       <section
         className=""
         id="yourDivId"
-        style={{ backgroundColor: "#0074bd" }}
+        style={{ backgroundColor: "#e47911" }}
       >
         <div className="container">
           <div className="breadcrumbs">
@@ -54,7 +56,7 @@ function box_style() {
       {/*Trending and Popular Product Start*/}
       <section
         className="category_section"
-        style={{ backgroundColor: "#fcfcfd" }}
+        style={{ backgroundColor: "#e47911" }}
       >
         <div className="container">
           <div className="loop_class">

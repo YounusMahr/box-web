@@ -3,6 +3,12 @@ import emailicon from '../assets/front/email_icon.webp';
 import sicon from '../assets/front/search-icon.webp';
 import carticon from '../assets/front/cart_icon.svg';
 import Whatsapp from '../assets/img/whatsapp_icon.svg'
+import cardboxes from '../assets/uploads_f/cardboxe1.webp';
+import  bottomcloser from '../assets/uploads_f/bottom-closer.png';
+import  slideimage1 from '../assets/front/slide_img_3_test.webp';
+import  slideimage2 from '../assets/front/slide_img_2_test.webp';
+import  slideimage3 from '../assets/front/slide_img_1_test.webp';
+
 
 import Links from './links';
 
@@ -141,8 +147,8 @@ $('a.btn_search_mob').on("click", function () {
         </div>
         <div className="col-md-4">
           <div className="float-end float-mobile-none-text-center">
-            {/* <Link to={login} style={{ color: "#fff" }}>Login</Link>
-            <Link to={signup} style={{ color: "#fff", padding: "0px 10px" }}>Sing-up</Link> */}
+            <Link to='auth/login' style={{ color: "#fff" }}>Login</Link>
+            <Link to='auth/signup' style={{ color: "#fff", padding: "0px 10px" }}>Sing-up</Link>
             <span style={{ fontSize: 12, fontWeight: 500, color: "#fff" }}>
               Call us Toll Free
             </span>
@@ -166,27 +172,27 @@ $('a.btn_search_mob').on("click", function () {
       <div className="row small-gutters">
         <div className="col-xl-3 col-lg-3 d-lg-flex-home align-items-center">
           <div id="logo">
-            <a className="show_logo_desktop" href="index.html">
+              <Link to='/' className="show_logo_desktop">
               <img
                 src={logo}
-                alt="The Custom Boxes"
+                alt="The Mailer boxes"
                 width={150}
                 height={60}
               />
-            </a>
-            <a loading="lazy" className="show_logo_mobile" href="index.html">
+            </Link>
+            <Link to='/' loading="lazy" className="show_logo_mobile">
               <img
-                src="uploads_f/1703836042.mobile_logo.webp"
+                src={logo}
                 alt="The Custom Boxes"
                 width={200}
                 height={40}
               />
-            </a>
+            </Link>
           </div>
         </div>
         <nav className="col-xl-7 col-lg-7">
           <div className="menu-button">
-            <span className="fa fa-reorder" />
+            <span className="fa fa-reorder" style={{color:"#8e4804"}} />
           </div>
           {/* Mobile menu button */}
           <div className="main-menu">
@@ -218,201 +224,32 @@ $('a.btn_search_mob').on("click", function () {
                   <div className="row">
                     <div className="col-md-8">
                       <div className="main_heading">
-                        <p className="mega_menu_heading">SHOP ALL INDUSTRIES</p>
+                        <p className="mega_menu_heading" style={{color:"rgb(228, 121, 17"}}>SHOP ALL INDUSTRIES</p>
                       </div>
                       <div className="row">
+
                         <div className="col-md-6">
                           <ul>
                             <li className="list_TCB">
-                              <a
-                                href="cardboard-packaging/index.html"
-                                className="mega_menu_sub_cat_name"
-                              >
+                            <Link to='industry/card_box'  className="mega_menu_sub_cat_name" >
+                              
                                 <img
                                   className="megamenu_img"
-                                  src="uploads_f/1720702761.Cardboard%20boxes%20(1).webp"
+                                  src={cardboxes}
                                   alt="Cardboard boxes ()"
                                   width={70}
                                   height={70}
                                 />
                                 Cardboard Packaging
-                              </a>
+                              </Link>
                             </li>
+
                           </ul>
                         </div>
-                        <div className="col-md-6">
-                          <ul>
-                            <li className="list_TCB">
-                              <a
-                                href="cbd-packaging/index.html"
-                                className="mega_menu_sub_cat_name"
-                              >
-                                <img
-                                  className="megamenu_img"
-                                  src="uploads_f/1720702849.CBD%20Packaging.webp"
-                                  alt="CBD Packaging"
-                                  width={70}
-                                  height={70}
-                                />
-                                CBD Packaging
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-md-6">
-                          <ul>
-                            <li className="list_TCB">
-                              <a
-                                href="cosmetic-boxes/index.html"
-                                className="mega_menu_sub_cat_name"
-                              >
-                                <img
-                                  className="megamenu_img"
-                                  src="uploads_f/1720702869.cosmetic%20boxes.webp"
-                                  alt="cosmetic boxes"
-                                  width={70}
-                                  height={70}
-                                />
-                                Cosmetic Boxes
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-md-6">
-                          <ul>
-                            <li className="list_TCB">
-                              <a
-                                href="display-packaging/index.html"
-                                className="mega_menu_sub_cat_name"
-                              >
-                                <img
-                                  className="megamenu_img"
-                                  src="uploads_f/1720702901.Display%20boxes.webp"
-                                  alt="Display boxes"
-                                  width={70}
-                                  height={70}
-                                />
-                                Display Packaging
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-md-6">
-                          <ul>
-                            <li className="list_TCB">
-                              <a
-                                href="eco-friendly-boxes/index.html"
-                                className="mega_menu_sub_cat_name"
-                              >
-                                <img
-                                  className="megamenu_img"
-                                  src="uploads_f/1720703366.Eco-friendly%20boxes.webp"
-                                  alt="Eco friendly boxes"
-                                  width={70}
-                                  height={70}
-                                />
-                                Eco Friendly Boxes
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-md-6">
-                          <ul>
-                            <li className="list_TCB">
-                              <a
-                                href="food-and-beverage/index.html"
-                                className="mega_menu_sub_cat_name"
-                              >
-                                <img
-                                  className="megamenu_img"
-                                  src="uploads_f/1720703079.Food%20And%20Beverages%20Boxes.webp"
-                                  alt="Food And Beverages Boxes"
-                                  width={70}
-                                  height={70}
-                                />
-                                Food And Beverage
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-md-6">
-                          <ul>
-                            <li className="list_TCB">
-                              <a
-                                href="gift-boxes/index.html"
-                                className="mega_menu_sub_cat_name"
-                              >
-                                <img
-                                  className="megamenu_img"
-                                  src="uploads_f/1720703096.Gift%20boxes.webp"
-                                  alt="Gift boxes"
-                                  width={70}
-                                  height={70}
-                                />
-                                Gift Boxes
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-md-6">
-                          <ul>
-                            <li className="list_TCB">
-                              <a
-                                href="metalized-boxes/index.html"
-                                className="mega_menu_sub_cat_name"
-                              >
-                                <img
-                                  className="megamenu_img"
-                                  src="uploads_f/1720703161.Metallized%20Boxes.webp"
-                                  alt="Metallized Boxes"
-                                  width={70}
-                                  height={70}
-                                />
-                                Metalized Boxes
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-md-6">
-                          <ul>
-                            <li className="list_TCB">
-                              <a
-                                href="retail-boxes/index.html"
-                                className="mega_menu_sub_cat_name"
-                              >
-                                <img
-                                  className="megamenu_img"
-                                  src="uploads_f/1720703179.Retail%20boxes.webp"
-                                  alt="Retail boxes"
-                                  width={70}
-                                  height={70}
-                                />
-                                Retail Boxes
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-md-6">
-                          <ul>
-                            <li className="list_TCB">
-                              <a
-                                href="rigid-boxes/index.html"
-                                className="mega_menu_sub_cat_name"
-                              >
-                                <img
-                                  className="megamenu_img"
-                                  src="uploads_f/1720703203.Rigid%20boxes.webp"
-                                  alt="Rigid boxes"
-                                  width={70}
-                                  height={70}
-                                />
-                                Rigid Boxes
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
+
+                       
                       </div>
-                      <div className="mt-4">
+                      <div className="mt-4" >
                         <div className="mega_menu_sub_cat_pro_inside">
                           <div className="">
                             <form
@@ -461,7 +298,7 @@ $('a.btn_search_mob').on("click", function () {
                         </button>
                       </div>
                     </div>
-                    <div className="col-md-4 last_column">
+                    <div className="col-md-4 last_column" style={{background:"rgb(228, 121, 17"}}>
                       <div className="last_column_padding">
                         <div className="owl-carousel owl-theme mega_menu_slide">
                           <div className="item text-center">
@@ -486,7 +323,7 @@ $('a.btn_search_mob').on("click", function () {
                         <p
                           className="mb-0"
                           style={{
-                            color: "#000",
+                            color: "rgb(196, 22, 28)",
                             textAlign: "center",
                             fontFamily: "Epilogue",
                             fontSize: 27,
@@ -528,19 +365,19 @@ $('a.btn_search_mob').on("click", function () {
                         </p>
                         <div className="mb-2">
                           <img
-                            src="frontend_f/front/slide_img_3_test.webp"
+                            src={slideimage1}
                             alt="image 1"
                             width={36}
                             height={36}
                           />
                           <img
-                            src="frontend_f/front/slide_img_2_test.webp"
+                            src={slideimage2}
                             alt="image 2"
                             width={36}
                             height={36}
                           />
                           <img
-                            src="frontend_f/front/slide_img_1_test.webp"
+                            src={slideimage3}
                             alt="image 3"
                             width={36}
                             height={36}
@@ -558,7 +395,8 @@ $('a.btn_search_mob').on("click", function () {
                           >
                             Call us Toll-Free: 1-800-396-1840
                           </a>
-                          <a href="quote/index.html">
+                        
+                           <Link to="quote">
                             <button
                               className="btn"
                               style={{
@@ -570,7 +408,7 @@ $('a.btn_search_mob').on("click", function () {
                             >
                               Get Quote
                             </button>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -583,149 +421,35 @@ $('a.btn_search_mob').on("click", function () {
                   <div className="row">
                     <div className="col-md-8">
                       <div className="main_heading">
-                        <p className="mega_menu_heading">SHOP ALL PRODUCTS</p>
+                        <p className="mega_menu_heading" style={{color:"rgb(228, 121, 17"}}>SHOP ALL PRODUCTS</p>
                       </div>
                       <div className="row">
+
                         <div className="col-md-6">
                           <ul>
                             <li className="list_TCB">
-                              <a
-                                href="bottom-closure/index.html"
-                                className="mega_menu_sub_cat_name"
-                              >
+                            <Link to='box_style/bottom_closure'   className="mega_menu_sub_cat_name">
                                 <img
                                   className="megamenu_img"
-                                  src="uploads_f/1708425175.Bottom%20Closure.png"
+                                  src={bottomcloser}
                                   alt="Bottom Closure"
                                   width={70}
                                   height={70}
                                 />
                                 Bottom Closure
-                              </a>
+                              </Link>
                             </li>
                           </ul>
                         </div>
-                        <div className="col-md-6">
-                          <ul>
-                            <li className="list_TCB">
-                              <a
-                                href="cd-covers/index.html"
-                                className="mega_menu_sub_cat_name"
-                              >
-                                <img
-                                  className="megamenu_img"
-                                  src="uploads_f/1708425198.CD%20Covers.png"
-                                  alt="CD Covers"
-                                  width={70}
-                                  height={70}
-                                />
-                                CD Covers
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-md-6">
-                          <ul>
-                            <li className="list_TCB">
-                              <a
-                                href="figure-and-pattern/index.html"
-                                className="mega_menu_sub_cat_name"
-                              >
-                                <img
-                                  className="megamenu_img"
-                                  src="uploads_f/1708425265.Figure-Pattern.png"
-                                  alt="Figure Pattern"
-                                  width={70}
-                                  height={70}
-                                />
-                                Figure &amp; Pattern
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-md-6">
-                          <ul>
-                            <li className="list_TCB">
-                              <a
-                                href="fold-and-assemble/index.html"
-                                className="mega_menu_sub_cat_name"
-                              >
-                                <img
-                                  className="megamenu_img"
-                                  src="uploads_f/1708425296.Fold-Assemble.png"
-                                  alt="Fold Assemble"
-                                  width={70}
-                                  height={70}
-                                />
-                                Fold &amp; Assemble
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-md-6">
-                          <ul>
-                            <li className="list_TCB">
-                              <a
-                                href="rectangular/index.html"
-                                className="mega_menu_sub_cat_name"
-                              >
-                                <img
-                                  className="megamenu_img"
-                                  src="uploads_f/1708425320.Rectangular.png"
-                                  alt="Rectangular"
-                                  width={70}
-                                  height={70}
-                                />
-                                Rectangular
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-md-6">
-                          <ul>
-                            <li className="list_TCB">
-                              <a
-                                href="showcase-exhibit/index.html"
-                                className="mega_menu_sub_cat_name"
-                              >
-                                <img
-                                  className="megamenu_img"
-                                  src="uploads_f/1708425349.Showcase-Exhibit.png"
-                                  alt="Showcase Exhibit"
-                                  width={70}
-                                  height={70}
-                                />
-                                Showcase Exhibit
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-md-6">
-                          <ul>
-                            <li className="list_TCB">
-                              <a
-                                href="top-closure/index.html"
-                                className="mega_menu_sub_cat_name"
-                              >
-                                <img
-                                  className="megamenu_img"
-                                  src="uploads_f/1708425378.Top-Closure.png"
-                                  alt="Top Closure"
-                                  width={70}
-                                  height={70}
-                                />
-                                Top Closure
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
+
+                       
                       </div>
                       <div className="mt-4">
                         <div className="mega_menu_sub_cat_pro_inside">
                           <div className="">
                             <form
                               className="example_header_navbar"
-                              action="https://www.thecustomboxes.com/search/"
+                              action=""
                               method="get"
                               style={{ margin: "0 auto", maxWidth: 500 }}
                             >
@@ -769,7 +493,7 @@ $('a.btn_search_mob').on("click", function () {
                         </button>
                       </div>
                     </div>
-                    <div className="col-md-4 last_column">
+                    <div className="col-md-4 last_column" style={{background:"rgb(228, 121, 17"}}>
                       <div className="last_column_padding">
                         <div className="owl-carousel owl-theme mega_menu_slide">
                           <div className="item text-center">
@@ -794,7 +518,7 @@ $('a.btn_search_mob').on("click", function () {
                         <p
                           className="mb-0"
                           style={{
-                            color: "#000",
+                            color: "rgb(196, 22, 28)",
                             textAlign: "center",
                             fontFamily: "Epilogue",
                             fontSize: 27,
@@ -836,19 +560,19 @@ $('a.btn_search_mob').on("click", function () {
                         </p>
                         <div className="mb-2">
                           <img
-                            src="frontend_f/front/slide_img_3_test.webp"
+                            src={slideimage1}
                             alt="image 1"
                             width={36}
                             height={36}
                           />
                           <img
-                            src="frontend_f/front/slide_img_2_test.webp"
+                            src={slideimage2}
                             alt="image 2"
                             width={36}
                             height={36}
                           />
                           <img
-                            src="frontend_f/front/slide_img_1_test.webp"
+                            src={slideimage3}
                             alt="image 3"
                             width={36}
                             height={36}
@@ -866,7 +590,7 @@ $('a.btn_search_mob').on("click", function () {
                           >
                             Call us Toll-Free: 1-800-396-1840
                           </a>
-                          <a href="quote/index.html">
+                           <Link to="quote">
                             <button
                               className="btn"
                               style={{
@@ -878,7 +602,8 @@ $('a.btn_search_mob').on("click", function () {
                             >
                               Get Quote
                             </button>
-                          </a>
+                            </Link>
+                         
                         </div>
                       </div>
                     </div>
@@ -1008,32 +733,32 @@ $('a.btn_search_mob').on("click", function () {
 
 {/* //------- Mobile Navbar ------ */}
 
-<div id="mobile-nav">
-  <div class="menu-button"><span class="fa fa-reorder" ></span></div>
+<div id="mobile-nav" style={{background:"#e47911"}}>
+  <div class="menu-button"><span class="fa fa-reorder" style={{color:"#8e4804"}} ></span></div>
   <ul>
     <li>
-      <a href="index.html">Home</a>
+    <Link to="/">Home</Link>
     </li>
     <li>
-      <a href="industries/index.html">Industries</a>
+    <Link to='industry'>Industries</Link>
     </li>
     <li>
-      <a href="boxstyles/index.html">Box By Style</a>
+    <Link to='box_style'>Box By Style</Link>
     </li>
     <li>
-      <a href="other-products/index.html">Other Products</a>
+    <Link to="other-product">Other Products</Link>
     </li>
     <li>
-      <a href="blog/index.html">Blog</a>
+    <Link to="blog">Blog</Link>
     </li>
     <li>
-      <a href="about-us/index.html">About us</a>
+    <Link to="about-us">About us</Link>
     </li>
     <li>
-      <a href="contact-us/index.html">Contact us</a>
+    <Link to="contact">Contact Us</Link>
     </li>
     <li>
-      <a href="quote/index.html">Get Quote</a>
+       <Link to="quote">Get Quote</Link>
     </li>
   </ul>
 </div>

@@ -3,6 +3,10 @@ import redline from '../assets/front/red-line.svg';
 import blueline from '../assets/front/blue-z.svg';
 import brandline from '../assets/front/brand_line.webp';
 
+import Header from '../components/header';
+import Footer from '../components/footer';
+import { Link } from 'react-router-dom';
+
 import retailboxes from '../assets/uploads_f/1713980563.Worth-Ravishing-Custom-Retail-Boxes.webp'
 import ecoboxes from '../assets/uploads_f/1708525324.Worth-Ravishing-Custom-Eco-Friendly-Boxes.webp'
 import cardboxes from '../assets/uploads_f/1708525390.Worth-Ravishing-Custom-Cardboard-Packaging.webp'
@@ -11,11 +15,13 @@ import rigidboxes from '../assets/uploads_f/1708525446.Worth-Ravishing-Custom-Ri
 function home() {
   return (
  <>
+
+
  <div id="page">
   {/* /header */}
   <main>
     
-    <h1 style={{ lineHeight: 0, position: "absolute" }}>Custom Boxes</h1>
+    <h1 style={{ lineHeight: 0, position: "absolute" }}>The Mailer-Boxes</h1>
     {/* Full Page Image Background Carousel Header */}
     <div
       id="carouselExampleAutoplaying"
@@ -1991,16 +1997,7 @@ function home() {
             </span>
           </h2>
           <p className="mb-lg-5 mt-lg-3 paragraph_18_400_white">
-            We fully comprehend that packaging boxes not only present but also
-            promote products effectively. Crafting a unique brand voice requires
-            a fresh and innovative appearance. 'Box by Style' stands out as a
-            distinctive feature on our official website, guiding you in
-            selecting the perfect style for your delicate, high-selling items.
-            Assemble various pieces of cardboard or other packaging materials to
-            experience the final result. We infuse delight into every unboxing
-            through exceptional interlocking. Explore creative concepts and
-            captivate your customers with playful shapes without compromising
-            functionality.
+          Hold onto the eyes of customers! Do you need something very similar? Stand by no more, counsels our first class box designers cum beauticians, to continuously remain prevalent. 'Box-by-style' alludes to a wide showcase of all flexible sorts of box styles that most likely dazzle you. Find Now!
           </p>
         </div>
         <div className="owl-carousel owl-theme products_carousel">
@@ -2429,7 +2426,7 @@ function home() {
     </section>
     {/*Home Page Form End*/}
     {/*Home Page Testimonial Section Start*/}
-    <section className="client_testimonials_" style={{}}>
+    <section className="client_testimonials_" style={{background:"#e47911"}}>
       <div className="testimonial_icon_left">
         <img
           src="frontend_f/front/testimonial_icon_left.svg"
@@ -3777,36 +3774,15 @@ function home() {
               <strong>Custom Boxes - Excellence For Existence</strong>
             </h2>
             <p>
-              <em>The Custom Boxes</em>&nbsp;has opened new doors of
-              possibilities to&nbsp;<strong>personalized boxes</strong>. We
-              assure quality to quantity in terms of designs, printing, and
-              outlook of boxes of all types. Our enticing color palette for
-              digital and offset printing technologies allows us to provide
-              superb-quality packaging boxes. Pick up the box material and
-              graphics you want us to craft for your wide variety of products.
-              Getting&nbsp;<strong>custom packaging printing</strong>
-              &nbsp;services at such an affordable price has never been as easy
-              as it is with one of the World’s biggest packaging companies. We
-              are assisting thousands of businesses in getting their unique
-              products packed in artistically designed bags or boxes. We allow
-              each of your products to get noticed by potential customers with
-              an array of add-ons and finishing options for your&nbsp;
-              <strong>custom boxes</strong>. We are an ardent supporter of green
-              eco-oasis; all our boxes are made from 100% recyclable materials.
-              We offer our worthy clients premium promotional and branding
-              boxes, setting themselves apart from others. We are pioneers in
-              creating custom logo boxes with eye-catching, and compelling
-              taglines.
+            Various types of products require boxes of various styles. We offer boxes of many styles, including showcase exhibit, fold and assemble bottom closure, and top closure. These boxes are adjustable as per the necessities and wants of the brands. We offer many shapes, sizes, and colors for packaging box styles. You can get them printed with item related graphics and text. We likewise assist clients with picking up any font style for composing text. Additionally, our most recent printing advancements and prepared staff can create magnificent outcomes. We use paragon inks that are explicit for printing cardboard boxes. Subsequently, it might be ideal in the event that you contacted us to get any style of the box according to your expectations and desires.
             </p>
             <p>
               More than a decade of hands-on experience has made us a top-notch
               packaging service provider preferred by stellar brands.&nbsp;
-              <a
-                href="quote/index.html"
-                style={{ textDecoration: "underline" }}
-              >
-                Fill in the form to get started now
-              </a>
+              <Link    style={{ textDecoration: "underline" }} to="quote">  
+              Fill in the form to get started now
+              </Link>
+
               ! Our Customer Services Representatives are available 24/7 to
               entertain your queries and concerns. Let us be your trusted
               packaging partner of all tough times. Feeling difficulty in
@@ -3816,65 +3792,21 @@ function home() {
             </p>
             <h2>
               <strong>
-                Custom Packaging Boxes: Protect, Prioritize, And Promote
+            Variety of finishing choices:
               </strong>
             </h2>
             <p>
-              How to make a ‘forerunner product box’ to produce massive sales?
-              The role of custom packaging in protecting, prioritizing, and
-              promoting your products over others reveals the mystery.&nbsp;
-              <strong>Boxes and packaging</strong>&nbsp;created by&nbsp;
-              <em>The Custom Boxes&nbsp;</em>are created to shine and captivate
-              customers. With ceaseless customization of package box styling and
-              design ideas, we make your products the real McCoy. We promote
-              automation of designs, printing, and branded packaging for good
-              looks and to streamline efficiency. Decorative packaging,
-              meticulously crafted by the skillful hands of our highly polished
-              staff, luxuriates your boxes appeal. Creating&nbsp;
-              <strong>packaging for business</strong>&nbsp;seems as effortless
-              as a breeze, but it involves strategic planning, meticulous
-              attention to detail, and awareness regarding the latest market
-              trends. Our well-equipped factories and state-of-the-art
-              technology keep the spark of your products alive, even behind the
-              layers of paperboard. Our&nbsp;<strong>personalized boxes</strong>
-              &nbsp;mirror your commitment to excellence, amplifying brand
-              value. Adored with copyright tags, QR codes, and trademark
-              symbols, <strong>Custom printed packaging</strong>&nbsp;win
-              customers’ trust, track inventory, and protect intellectual
-              property.&nbsp;
+           We will provide you boxes with the ideal wrapping up. Be that as it may, we offer different box styles with extra coatings like matte or gloss. These coatings can give a charming allure for your boxes. Besides, we offer box styles with silver, copper, or gold thwarting. It will give a metallic appearance to your packaging arrangements. Numerous other completing choices like PVC, embellishing, raised ink, and others are accessible for these boxes. Consequently, it might be ideal assuming you came to themailerboxes.co.uk to get additional data.
             </p>
             <p>
-              Starting from designing, assembling, printing, die cutting,
-              lamination, and pasting, we achieve 100% perfection to enhance
-              natural aesthetics of packing boxes.&nbsp;
-              <strong>Customized boxes</strong>&nbsp;are utilized worldwide in
-              order to accomplish different purposes, the most common of them is
-              to make them “Fit for the product”. It influences a strong brand
-              image, facilitates shipping, and displays items of all kinds
-              ranging from decorative to electronic and surgical items.
-              Our&nbsp;<strong>custom packages</strong>&nbsp;boxes are
-              manufactured in-house by promising care and attention so that
-              customer requirements are fulfilled at every step. We offer
-              competitive rates coupled with a steadfast commitment to ensuring
-              the best quality services among all&nbsp;
-              <strong>custom packaging companies</strong>&nbsp;near you.
-              Discounted packaging box prices with unrivaled quality assurance
-              practices make us the ultimate solution to all queries like where
-              to buy packing boxes. We craft boxes for everyone! Our
-              wallet-loving discount offers are the talks of town. Hurry up!
-              Snatch it before it slips away!
+            More durable packaging solutions: Every business needs stronger packaging to keep their products safe. During shipping and handling, there are many risks that can harm your items. That’s why we use tougher materials for our packaging boxes, such as bux board, kraft, and corrugated cardboard. You can choose the thickness you need, ranging from 10pt to 28pt. Additionally, these boxes are waterproof and protect against moisture, ensuring your products stay safe from damage during storage and shipping.
             </p>
             <h2>
-              <strong>Custom Boxes With Logo- Good-To-Go For All:</strong>
+              <strong> Faster handling of box styles:</strong>
             </h2>
             <p>
-              Is your selling journey still revolving around queries such as
-              what’s trending now? How to grab the attention of customers? What
-              makes your brand one in millions? How to be quickly followed by
-              millions? Or others. Don’t sweat over the small stuff. We are here
-              to show you the right path by instantly knowing what’s inside your
-              mind and always coming out with a design that connects you with
-              your customers. Have a look at what we have to put on your&nbsp;
+           
+            Faster handling of orders has assisted us with making a great standing in the market. Our most recent machines helps with assembling these boxes as quick as could be expected. We send standard orders in 10-12 business days subsequent to concluding the plan. On the off chance that you want boxes even faster, consider our rush delivery administration. We dispatch rush requests in 6-8 working days. You should pay additional charges for rush delivery. Consequently, assuming you really want your box styles quicker, you should favor themailerboxes.co.uk
               <strong>branded boxes</strong>:
             </p>
             <ol start={1} style={{ listStyleType: "decimal" }}>
@@ -3894,13 +3826,7 @@ function home() {
               boxes into a perfect fit for your brands. We-&nbsp;while enjoying
               the status of the&nbsp;
               <strong>best custom packaging&nbsp;company in USA,</strong>
-              &nbsp;believe nothing other than a simple box with a logo can be
-              as powerful marketing tool, addressing all business problems quite
-              smoothly. Just by a pinch of creativity and professionalism to
-              apparently simple-looking boxes, custom printed boxes would start
-              telling a story. People love to listen to stories- especially
-              motivational stories. So, why not amuse people with what they want
-              to listen to?&nbsp;
+              &nbsp;Cost-effective and green materials: We acquire manufacturing materials for these boxes from regular and sustainable sources. Subsequently, our boxes are practical and reasonable for a wide range of businesses. Besides, these materials are ok for the climate since they are recyclable and decomposable. Accordingly, they can assist your business with remaining in legitimate consistence &nbsp;
             </p>
             <p>
               Let’s zero in on the straightforward details about how
@@ -3928,12 +3854,7 @@ function home() {
               competitive edge.
             </p>
             <p>
-              To all incredible business owners and manufacturers,&nbsp;
-              <em>The Custom Boxes</em>&nbsp;is a one-place solution for all
-              your packaging needs.&nbsp;<strong>Order custom packaging</strong>
-              &nbsp;at a rate nobody else is offering and get yourself to avail
-              the best industry-specific packaging. Just mark your identity for
-              pursuing a sustainable business journey with us.
+            In the event that you want information about corrugated box styles, you should contact us through live chats portals, email, or calls. Our expert customer care group will give all the information in the most ideal way.
             </p>{" "}
           </div>
         </div>
@@ -4487,7 +4408,6 @@ function home() {
   {/*Think Outside Box Section End*/}
   {/*/footer*/}
 </div>
-
 
  </>
  

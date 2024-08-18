@@ -1,14 +1,16 @@
 import React from 'react'
-
+import Header from '../components/header';
+import Footer from '../components/footer';
 function contact() {
   return (
     <div>
+  
       <div id="page">
   {/* /header */}
   {/* Mobile Menu start */}
   <main>
     {/* Mobile Menu End */}
-    <section className="banner_768_imagev static_pages" id="yourDivId">
+    <section className="banner_768_imagev static_pages" id="yourDivId" style={{background:"#e47911"}}>
       <div className="container">
         <div className="row align-center">
           <div className="col-md-8 width_90_per">
