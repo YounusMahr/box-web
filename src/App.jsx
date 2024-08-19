@@ -30,29 +30,27 @@ import About from './pages/about';
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 
 function App() {
- 
   return (
-  <>
-  <Header/>
-  <Routes>
-  <Route exact path="/" element={<Home/>} />
-  <Route exact path="other-product" element={<Otherproducts/>} />
-  <Route exact path="contact" element={<Contact/>} />
-  <Route exact path="store" element={<Store/>} />
-  <Route exact path="quote" element={<Quote/>} />
-  <Route exact path="industry" element={<Industry/>} />
-  <Route exact path="industry/card_box" element={<Cardbox/>} />
-  <Route exact path="box_style" element={<Box_style/>} />
-  <Route exact path="box_style/bottom_closure" element={<Bottom_closure/>} />
-  <Route exact path="blog" element={<Blog/>} />
-  <Route exact path="about-us" element={<About/>} />
-  {/* //--- Login & signup ------ */}
-  <Route exact path="auth/login" element={<Login/>} />
-  <Route exact path="auth/signup" element={<Signup/>} />
-  </Routes>
-  <Footer/>
-  </>
-  )
+    <>
+      {window.location.pathname !== '/auth/login' && window.location.pathname !== '/auth/signup' && <Header />}
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="other-product" element={<Otherproducts />} />
+          <Route exact path="contact" element={<Contact />} />
+          <Route exact path="store" element={<Store />} />
+          <Route exact path="quote" element={<Quote />} />
+          <Route exact path="industry" element={<Industry />} />
+          <Route exact path="industry/card_box" element={<Cardbox />} />
+          <Route exact path="box_style" element={<Box_style />} />
+          <Route exact path="box_style/bottom_closure" element={<Bottom_closure />} />
+          <Route exact path="blog" element={<Blog />} />
+          <Route exact path="about-us" element={<About />} />
+          {/* --- Login & Signup ------ */}
+          <Route exact path="auth/login" element={<Login />} />
+          <Route exact path="auth/signup" element={<Signup />} />
+        </Routes>
+      {window.location.pathname !== '/auth/login' && window.location.pathname !== '/auth/signup' && <Footer />}
+    </>
+  );
 }
-
 export default App

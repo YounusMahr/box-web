@@ -29,12 +29,6 @@ $(window).on("scroll", function () {
 });
 
 
-$(document).ready(function(){
-  $(".menu-button").click(function(){
-    $("#mobile-nav").toggle();
-  });
-});
-
 
 // Menu Categories
 // $(window).resize(function () {
@@ -184,8 +178,7 @@ $(document).ready(function(){
               <img
                 src={logo}
                 alt="The Mailer boxes"
-                width={150}
-                height={60}
+               
               />
             </Link>
             <Link to='/' loading="lazy" className="show_logo_mobile">
@@ -193,7 +186,7 @@ $(document).ready(function(){
                 src={logo}
                 alt="The Custom Boxes"
                 width={200}
-                height={40}
+                height={80}
               />
             </Link>
           </div>
