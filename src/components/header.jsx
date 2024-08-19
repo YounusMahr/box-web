@@ -18,7 +18,6 @@ import $ from 'jquery';
 import React, { useEffect, useRef } from 'react';
 function header() {
   useEffect(() => {
-
     // Sticky nav
 var $headerStick = $('.Sticky');
 $(window).on("scroll", function () {
@@ -59,8 +58,8 @@ $(window).resize(function () {
   }
 }).resize();
 
-// // Mobile Mmenu
-// var $menu = $(".menu-button").click({
+// Mobile Mmenu
+// var $menu = $("#menu").mmenu({
 //   "extensions": ["pagedim-black"],
 //   counters: true,
 //   keyboardNavigation: {
@@ -84,21 +83,21 @@ $(window).resize(function () {
 //   }
 // });
 
-// // Menu
-// $('a.open_close').on("click", function () {
-//   $('.main-menu').toggleClass('show');
-//   $('.layer').toggleClass('layer-is-visible');
-// });
-// $('a.show-submenu').on("click", function () {
-//   $(this).next().toggleClass("show_normal");
-// });
-// $('a.show-submenu-mega').on("click", function () {
-//   $(this).next().toggleClass("show_mega");
-// });
+// Menu
+$('a.open_close').on("click", function () {
+  $('.main-menu').toggleClass('show');
+  $('.layer').toggleClass('layer-is-visible');
+});
+$('a.show-submenu').on("click", function () {
+  $(this).next().toggleClass("show_normal");
+});
+$('a.show-submenu-mega').on("click", function () {
+  $(this).next().toggleClass("show_mega");
+});
 
-// $('a.btn_search_mob').on("click", function () {
-//   $('.search_mob_wp').slideToggle("fast");
-// });
+$('a.btn_search_mob').on("click", function () {
+  $('.search_mob_wp').slideToggle("fast");
+});
 
 }, []);
 
@@ -177,8 +176,8 @@ $(window).resize(function () {
               <img
                 src={logo}
                 alt="The Mailer boxes"
-                width={200}
-                height={100}
+                width={150}
+                height={60}
               />
             </Link>
             <Link to='/' loading="lazy" className="show_logo_mobile">
@@ -772,7 +771,7 @@ $(window).resize(function () {
     />
     <a
       id="quick-cart-pay"
-      href="https://wa.me/+923267073002"
+      href="https://wa.me/+18722826124"
       className="wow tada animated animated pum-trigger animated"
       data-wow-delay="300ms"
       data-wow-iteration="infinite"

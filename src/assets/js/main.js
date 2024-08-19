@@ -43,29 +43,29 @@
 	}).resize();
 	
 	// Mobile Mmenu
-	var $menu = $("#menu").mmenu({
-		"extensions": ["pagedim-black"],
-		counters: true,
-		keyboardNavigation: {
-			enable: true,
-			enhance: true
-		},
-		navbar: {
-			title: 'MENU'
-		},
-		offCanvas: {
-		  pageSelector: "#page"
-	   },
-		navbars: [{position:'bottom',content: ['<a href="#0">© 2022 Allaia</a>']}]}, 
-		{
-		// configuration
-		clone: true,
-		classNames: {
-			fixedElements: {
-				fixed: "menu_fixed"
-			}
-		}
-	});
+	// var $menu = $("#menu").mmenu({
+	// 	"extensions": ["pagedim-black"],
+	// 	counters: true,
+	// 	keyboardNavigation: {
+	// 		enable: true,
+	// 		enhance: true
+	// 	},
+	// 	navbar: {
+	// 		title: 'MENU'
+	// 	},
+	// 	offCanvas: {
+	// 	  pageSelector: "#page"
+	//    },
+	// 	navbars: [{position:'bottom',content: ['<a href="#0">© 2022 Allaia</a>']}]}, 
+	// 	{
+	// 	// configuration
+	// 	clone: true,
+	// 	classNames: {
+	// 		fixedElements: {
+	// 			fixed: "menu_fixed"
+	// 		}
+	// 	}
+	// });
 	
 	// Menu
 	$('a.open_close').on("click", function () {
