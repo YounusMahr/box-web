@@ -18,6 +18,47 @@ import $ from 'jquery';
 import React, { useEffect, useRef } from 'react';
 function header() {
   useEffect(() => {
+
+ // Function to load a script
+ const loadScript = (src) => {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = src;
+    script.type = 'module';
+    script.async = true;
+    script.onload = () => resolve();
+    script.onerror = () => reject();
+    document.body.appendChild(script);
+  });
+};
+
+// Array of script sources
+const scripts = [
+  '/src/main.jsx',
+  '/src/assets/js/common_scripts.min.js',
+  '/src/assets/js/carousel_bootstrap.min.js',
+  '/src/assets/common.js'
+];
+
+// Load all scripts
+const loadScripts = async () => {
+  try {
+    for (const script of scripts) {
+      await loadScript(script);
+    }
+  } catch (error) {
+    console.error('Error loading scripts:', error);
+  }
+};
+
+loadScripts();
+
+// Cleanup function to remove scripts if necessary
+
+
+
+
+
     // Sticky nav
 var $headerStick = $('.Sticky');
 $(window).on("scroll", function () {
