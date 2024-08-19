@@ -29,34 +29,34 @@ $(window).on("scroll", function () {
 });
 
 // Menu Categories
-$(window).resize(function () {
-  if ($(window).width() >= 768) {
-    $('a[href="#"]').on('click', function (e) {
-      e.preventDefault();
-    });
-    $('.categories').addClass('menu');
-    $('.menu ul > li').on('mouseover', function (e) {
-      $(this).find("ul:first").show();
-      $(this).find('> span a').addClass('active');
-    }).on('mouseout', function (e) {
-      $(this).find("ul:first").hide();
-      $(this).find('> span a').removeClass('active');
-    });
-    $('.menu ul li li').on('mouseover', function (e) {
-      if ($(this).has('ul').length) {
-        $(this).parent().addClass('expanded');
-      }
-      $('.menu ul:first', this).parent().find('> span a').addClass('active');
-      $('.menu ul:first', this).show();
-    }).on('mouseout', function (e) {
-      $(this).parent().removeClass('expanded');
-      $('.menu ul:first', this).parent().find('> span a').removeClass('active');
-      $('.menu ul:first', this).hide();
-    });
-  } else {
-    $('.categories').removeClass('menu');
-  }
-}).resize();
+// $(window).resize(function () {
+//   if ($(window).width() >= 768) {
+//     $('a[href="#"]').on('click', function (e) {
+//       e.preventDefault();
+//     });
+//     $('.categories').addClass('menu');
+//     $('.menu ul > li').on('mouseover', function (e) {
+//       $(this).find("ul:first").show();
+//       $(this).find('> span a').addClass('active');
+//     }).on('mouseout', function (e) {
+//       $(this).find("ul:first").hide();
+//       $(this).find('> span a').removeClass('active');
+//     });
+//     $('.menu ul li li').on('mouseover', function (e) {
+//       if ($(this).has('ul').length) {
+//         $(this).parent().addClass('expanded');
+//       }
+//       $('.menu ul:first', this).parent().find('> span a').addClass('active');
+//       $('.menu ul:first', this).show();
+//     }).on('mouseout', function (e) {
+//       $(this).parent().removeClass('expanded');
+//       $('.menu ul:first', this).parent().find('> span a').removeClass('active');
+//       $('.menu ul:first', this).hide();
+//     });
+//   } else {
+//     $('.categories').removeClass('menu');
+//   }
+// }).resize();
 
 // Mobile Mmenu
 // var $menu = $("#menu").mmenu({
