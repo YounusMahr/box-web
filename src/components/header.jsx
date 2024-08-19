@@ -17,130 +17,90 @@ import { Link } from 'react-router-dom';
 import $ from 'jquery';
 import React, { useEffect, useRef } from 'react';
 function header() {
-  useEffect(() => {
+//   useEffect(() => {
 
- // Function to load a script
- const loadScript = (src) => {
-  return new Promise((resolve, reject) => {
-    const script = document.createElement('script');
-    script.src = src;
-    script.type = 'module';
-    script.async = true;
-    script.onload = () => resolve();
-    script.onerror = () => reject();
-    document.body.appendChild(script);
-  });
-};
+//     // Sticky nav
+// var $headerStick = $('.Sticky');
+// $(window).on("scroll", function () {
+//   if ($(this).scrollTop() > 80) {
+//     $headerStick.addClass("sticky_element");
+//   } else {
+//     $headerStick.removeClass("sticky_element");
+//   }; 
+// });
 
-// Array of script sources
-const scripts = [
-  '/src/main.jsx',
-  '/src/assets/js/common_scripts.min.js',
-  '/src/assets/js/carousel_bootstrap.min.js',
-  '/src/assets/common.js'
-];
-
-// Load all scripts
-const loadScripts = async () => {
-  try {
-    for (const script of scripts) {
-      await loadScript(script);
-    }
-  } catch (error) {
-    console.error('Error loading scripts:', error);
-  }
-};
-
-loadScripts();
-
-// Cleanup function to remove scripts if necessary
-
-
-
-
-
-    // Sticky nav
-var $headerStick = $('.Sticky');
-$(window).on("scroll", function () {
-  if ($(this).scrollTop() > 80) {
-    $headerStick.addClass("sticky_element");
-  } else {
-    $headerStick.removeClass("sticky_element");
-  }; 
-});
-
-// Menu Categories
-$(window).resize(function () {
-  if ($(window).width() >= 768) {
-    $('a[href="#"]').on('click', function (e) {
-      e.preventDefault();
-    });
-    $('.categories').addClass('menu');
-    $('.menu ul > li').on('mouseover', function (e) {
-      $(this).find("ul:first").show();
-      $(this).find('> span a').addClass('active');
-    }).on('mouseout', function (e) {
-      $(this).find("ul:first").hide();
-      $(this).find('> span a').removeClass('active');
-    });
-    $('.menu ul li li').on('mouseover', function (e) {
-      if ($(this).has('ul').length) {
-        $(this).parent().addClass('expanded');
-      }
-      $('.menu ul:first', this).parent().find('> span a').addClass('active');
-      $('.menu ul:first', this).show();
-    }).on('mouseout', function (e) {
-      $(this).parent().removeClass('expanded');
-      $('.menu ul:first', this).parent().find('> span a').removeClass('active');
-      $('.menu ul:first', this).hide();
-    });
-  } else {
-    $('.categories').removeClass('menu');
-  }
-}).resize();
-
-// // Mobile Mmenu
-// var $menu = $(".menu-button").click({
-//   "extensions": ["pagedim-black"],
-//   counters: true,
-//   keyboardNavigation: {
-//     enable: true,
-//     enhance: true
-//   },
-//   navbar: {
-//     title: 'MENU'
-//   },
-//   offCanvas: {
-//     pageSelector: "#page"
-//    },
-//   navbars: [{position:'bottom',content: ['<a href="#0">© 2022 Allaia</a>']}]}, 
-//   {
-//   // configuration
-//   clone: true,
-//   classNames: {
-//     fixedElements: {
-//       fixed: "menu_fixed"
-//     }
+// // Menu Categories
+// $(window).resize(function () {
+//   if ($(window).width() >= 768) {
+//     $('a[href="#"]').on('click', function (e) {
+//       e.preventDefault();
+//     });
+//     $('.categories').addClass('menu');
+//     $('.menu ul > li').on('mouseover', function (e) {
+//       $(this).find("ul:first").show();
+//       $(this).find('> span a').addClass('active');
+//     }).on('mouseout', function (e) {
+//       $(this).find("ul:first").hide();
+//       $(this).find('> span a').removeClass('active');
+//     });
+//     $('.menu ul li li').on('mouseover', function (e) {
+//       if ($(this).has('ul').length) {
+//         $(this).parent().addClass('expanded');
+//       }
+//       $('.menu ul:first', this).parent().find('> span a').addClass('active');
+//       $('.menu ul:first', this).show();
+//     }).on('mouseout', function (e) {
+//       $(this).parent().removeClass('expanded');
+//       $('.menu ul:first', this).parent().find('> span a').removeClass('active');
+//       $('.menu ul:first', this).hide();
+//     });
+//   } else {
+//     $('.categories').removeClass('menu');
 //   }
-// });
+// }).resize();
 
-// // Menu
-// $('a.open_close').on("click", function () {
-//   $('.main-menu').toggleClass('show');
-//   $('.layer').toggleClass('layer-is-visible');
-// });
-// $('a.show-submenu').on("click", function () {
-//   $(this).next().toggleClass("show_normal");
-// });
-// $('a.show-submenu-mega').on("click", function () {
-//   $(this).next().toggleClass("show_mega");
-// });
+// // // Mobile Mmenu
+// // var $menu = $(".menu-button").click({
+// //   "extensions": ["pagedim-black"],
+// //   counters: true,
+// //   keyboardNavigation: {
+// //     enable: true,
+// //     enhance: true
+// //   },
+// //   navbar: {
+// //     title: 'MENU'
+// //   },
+// //   offCanvas: {
+// //     pageSelector: "#page"
+// //    },
+// //   navbars: [{position:'bottom',content: ['<a href="#0">© 2022 Allaia</a>']}]}, 
+// //   {
+// //   // configuration
+// //   clone: true,
+// //   classNames: {
+// //     fixedElements: {
+// //       fixed: "menu_fixed"
+// //     }
+// //   }
+// // });
 
-// $('a.btn_search_mob').on("click", function () {
-//   $('.search_mob_wp').slideToggle("fast");
-// });
+// // // Menu
+// // $('a.open_close').on("click", function () {
+// //   $('.main-menu').toggleClass('show');
+// //   $('.layer').toggleClass('layer-is-visible');
+// // });
+// // $('a.show-submenu').on("click", function () {
+// //   $(this).next().toggleClass("show_normal");
+// // });
+// // $('a.show-submenu-mega').on("click", function () {
+// //   $(this).next().toggleClass("show_mega");
+// // });
 
-}, []);
+// // $('a.btn_search_mob').on("click", function () {
+// //   $('.search_mob_wp').slideToggle("fast");
+// // });
+
+// }, []);
 
   return (
     <>
