@@ -13,7 +13,7 @@ function quote() {
     <section
       className="banner_768_image static_pages"
       id="yourDivId"
-      style={{ backgroundColor: "#0074bd" }}
+      style={{ backgroundColor: "#e47911" }}
     >
       <div className="container">
         <div className="row" style={{ alignItems: "center" }}>

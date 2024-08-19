@@ -196,7 +196,7 @@ var scriptLoaded = false;
           document.getElementById(cityName).style.display = "block";
           evt.currentTarget.className += " active";
         }
-          document.getElementById("defaultOpen").click();
+          
   
         $('.Show_').click(function() {
         $('#target_').show(200);

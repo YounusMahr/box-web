@@ -58,8 +58,8 @@ $(window).resize(function () {
   }
 }).resize();
 
-// Mobile Mmenu
-// var $menu = $("#menu").mmenu({
+// // Mobile Mmenu
+// var $menu = $(".menu-button").click({
 //   "extensions": ["pagedim-black"],
 //   counters: true,
 //   keyboardNavigation: {
@@ -83,21 +83,21 @@ $(window).resize(function () {
 //   }
 // });
 
-// Menu
-$('a.open_close').on("click", function () {
-  $('.main-menu').toggleClass('show');
-  $('.layer').toggleClass('layer-is-visible');
-});
-$('a.show-submenu').on("click", function () {
-  $(this).next().toggleClass("show_normal");
-});
-$('a.show-submenu-mega').on("click", function () {
-  $(this).next().toggleClass("show_mega");
-});
+// // Menu
+// $('a.open_close').on("click", function () {
+//   $('.main-menu').toggleClass('show');
+//   $('.layer').toggleClass('layer-is-visible');
+// });
+// $('a.show-submenu').on("click", function () {
+//   $(this).next().toggleClass("show_normal");
+// });
+// $('a.show-submenu-mega').on("click", function () {
+//   $(this).next().toggleClass("show_mega");
+// });
 
-$('a.btn_search_mob').on("click", function () {
-  $('.search_mob_wp').slideToggle("fast");
-});
+// $('a.btn_search_mob').on("click", function () {
+//   $('.search_mob_wp').slideToggle("fast");
+// });
 
 }, []);
 
@@ -176,8 +176,8 @@ $('a.btn_search_mob').on("click", function () {
               <img
                 src={logo}
                 alt="The Mailer boxes"
-                width={150}
-                height={60}
+                width={200}
+                height={100}
               />
             </Link>
             <Link to='/' loading="lazy" className="show_logo_mobile">
@@ -771,7 +771,7 @@ $('a.btn_search_mob').on("click", function () {
     />
     <a
       id="quick-cart-pay"
-      href="https://wa.me/+18722826124"
+      href="https://wa.me/+923267073002"
       className="wow tada animated animated pum-trigger animated"
       data-wow-delay="300ms"
       data-wow-iteration="infinite"

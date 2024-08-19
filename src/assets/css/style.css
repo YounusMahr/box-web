@@ -10,6 +10,7 @@
 
 a{
     text-decoration: none !important;
+    color: #b65705;
 }
 
 
@@ -222,7 +223,7 @@ main {
 
 a {
     font-weight: 500;
-    color: #06c
+    color: #b65705;
 }
 
 a:focus,
@@ -235,7 +236,7 @@ a:hover {
 .btn_1,
 a.btn_1 {
     border: none;
-    background: #004dda;
+    background: #b65705;
     cursor: pointer;
     display: inline-block;
     padding: 17px 25px;
@@ -309,14 +310,14 @@ a.btn_1.outline {
 
 .btn_1.outline:hover,
 a.btn_1.outline:hover {
-    border-color: #004dda;
-    color: #004dda !important
+    border-color: #b65705;
+    color: #b65705 !important
 }
 
 .menu ul li ul,
 header.version_1 .main_header ul.top_tools>li .dropdown-access .dropdown-menu,
 header.version_1 .main_header ul.top_tools>li .dropdown-cart .dropdown-menu {
-    border-top: 2px solid #004dda
+    border-top: 2px solid #b65705
 }
 
 .btn_1.gray,
@@ -381,7 +382,7 @@ main.freeze {
 
 .top_line.version_1 {
     color: #fff;
-    background-color: #004dda;
+    background-color: #b65705;
     font-size: .8125rem
 }
 
@@ -581,7 +582,7 @@ header ul.top_tools>li .dropdown-cart .dropdown-menu a.btn_1 {
 header ul.top_tools>li .dropdown-access .dropdown-menu a.btn_1:hover,
 header ul.top_tools>li .dropdown-cart .dropdown-menu a.btn_1:hover {
     color: #fff !important;
-    background-color: #004dda
+    background-color: #b65705
 }
 
 header .main_nav {
@@ -640,7 +641,7 @@ header.version_2 .main-menu>ul>li:hover>a,
 header.version_2 .main_header ul.top_tools>li .dropdown-access:hover>a,
 header.version_2 .main_header ul.top_tools>li .dropdown-cart:hover>a,
 header.version_2 .main_header ul.top_tools>li a:hover {
-    color: #004dda
+    color: #b65705 !important;
 }
 
 header .sticky_element {
@@ -872,7 +873,7 @@ nav a.open_close#close_in>i:hover {
     }
 
     .main-menu ul ul li:hover>a {
-        color: #004dda;
+        color: #b65705;
         background-color: rgba(0, 77, 218, .05)
     }
 
@@ -911,7 +912,7 @@ nav a.open_close#close_in>i:hover {
 }
 
 .mega_menu_heading {
-    color: #0074bd;
+    color: rgb(228, 121, 17);
     font-size: 24px;
     font-weight: 700;
     line-height: normal
@@ -944,7 +945,7 @@ nav a.open_close#close_in>i:hover {
 
 .home_slider_blue,
 .set_hover:hover a {
-    color: #0074bd !important
+    color: rgb(228, 121, 17) !important
 }
 
 .list_TCB:hover,
@@ -959,11 +960,11 @@ nav a.open_close#close_in>i:hover {
 .form_para_,
 .label_form,
 .list_TCB:hover a {
-    color: #0074bd
+    color: rgb(228, 121, 17)
 }
 
 .mega_menu_sub_cat_pro {
-    border-left: 2px solid #0074bd !important;
+    border-left: 2px solid rgb(228, 121, 17) !important;
     margin: 40px 0
 }
 
@@ -1004,7 +1005,7 @@ nav a.open_close#close_in>i:hover {
     .main-menu ul li a:hover,
     a.show-submenu-mega:hover,
     a.show-submenu:hover {
-        color: #004dda !important;
+        color: #b65705 !important;
         background-color: rgba(0, 77, 218, .05)
     }
 
@@ -1210,7 +1211,7 @@ li.mm-vertical.mm-opened>.mm-panel {
     height: 2px;
     width: 100%;
     margin-top: -2px;
-    background-color: #004dda
+    background-color: #b65705
 }
 
 .menu ul li ul li a {
@@ -1233,7 +1234,7 @@ li.mm-vertical.mm-opened>.mm-panel {
 
 .menu ul li ul li a.active,
 .menu ul.expanded span a.active:hover {
-    color: #004dda;
+    color: #b65705;
     background-color: rgba(0, 77, 218, .04)
 }
 
@@ -1244,7 +1245,7 @@ li.mm-vertical.mm-opened>.mm-panel {
     float: right;
     font-size: 1.3125rem;
     margin-top: 0;
-    color: #004dda
+    color: #b65705
 }
 
 .menu ul li ul.expanded {
@@ -1301,7 +1302,7 @@ header.version_2 .menu ul li ul li a {
 }
 
 header.version_2 .menu ul li ul li a:hover {
-    color: #004dda !important
+    color: #b65705 !important
 }
 
 header.version_2 .menu ul li ul {
@@ -1894,7 +1895,7 @@ body.modal-open .mm-slideout {
 .feat ul li i {
     font-size: 2.25rem;
     margin: 0 20px 0 0;
-    color: #004dda
+    color: #b65705
 }
 
 .feat ul li p,
@@ -2767,7 +2768,7 @@ ul.additional_links li:after {
 }
 
 .top-bar-bg {
-    background-color: #8e4804;
+    background-color: #b65705;
     padding: 10px 0
 }
 
@@ -2924,7 +2925,7 @@ ul.additional_links li:after {
 }
 
 .product_title .heading_text_two {
-    color: #0074bd;
+    color: rgb(228, 121, 17);
     font-family: Epilogue;
     font-size: 48px;
     font-style: italic;
@@ -3049,7 +3050,7 @@ ul.additional_links li:after {
 }
 
 .brand_text_area .heading_one_two_ {
-    color: #0074bd;
+    color: rgb(228, 121, 17);
     font-style: italic
 }
 
@@ -3063,7 +3064,7 @@ ul.additional_links li:after {
 }
 
 .product_image_carousel .owl-dot.active span:before {
-    background: #0074bd !important;
+    background: rgb(228, 121, 17) !important;
     width: 70px !important;
     border-radius: 10px !important;
     left: 0 !important
@@ -3105,7 +3106,7 @@ ul.additional_links li:after {
 
 .owl-next,
 .popular_product_grid .owl-prev {
-    background-color: #0074bd !important;
+    background-color: rgb(228, 121, 17) !important;
     border-radius: 50% !important
 }
 
@@ -3234,7 +3235,7 @@ ul.additional_links li:after {
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-color: #0074bd;
+    background-color: rgb(228, 121, 17);
     background-image: url("../front/accordian_up.svg")
 }
 
@@ -3328,7 +3329,8 @@ ul.additional_links li:after {
 
 .client_testimonials_ .testimonial_carousel .owl-nav .owl-next {
     border-radius: 50% !important;
-    background: #fff !important
+    background: #b65705  !important;
+
 }
 
 .client_testimonials_ .testimonial_carousel .owl-nav {
@@ -3459,7 +3461,7 @@ ul.additional_links li:after {
 }
 
 .home_slider_blue_bg {
-    background-color: #0074bd !important
+    background-color: rgb(228, 121, 17) !important
 }
 
 .home_slider_red_bg {
@@ -3467,7 +3469,7 @@ ul.additional_links li:after {
 }
 
 .heading_blue {
-    color: #0074bd;
+    color: rgb(228, 121, 17);
     font-family: Epilogue;
     font-weight: 500;
     text-transform: capitalize
@@ -3540,7 +3542,7 @@ ul.additional_links li:after {
 }
 
 .home_information {
-    background-color: #0074bd;
+    background-color: rgb(228, 121, 17);
     position: relative;
     padding: 125px 0
 }
@@ -3989,7 +3991,7 @@ ul.additional_links li:after {
 }
 
 .social_links_footer li a {
-    color: #0074bd;
+    color: rgb(228, 121, 17);
     font-weight: 700;
     background-color: #fff;
     padding: 15px;
@@ -4021,7 +4023,7 @@ ul.additional_links li:after {
 }
 
 .footer_blue_heading {
-    color: #0074bd;
+    color: rgb(228, 121, 17);
     font-style: italic;
     font-weight: 500
 }
@@ -4053,7 +4055,7 @@ ul.additional_links li:after {
 }
 
 .form_blue_heading_2 {
-    color: #0074bd;
+    color: rgb(228, 121, 17);
     font-size: 20px;
     font-weight: 700
 }
@@ -4185,9 +4187,9 @@ ul.additional_links li:after {
 
 .tab_btn_hom.active {
     border-radius: 5px;
-    color: #0074bd;
+    color: rgb(228, 121, 17);
     background: #fff;
-    border: 1px solid #0074bd;
+    border: 1px solid rgb(228, 121, 17);
     padding: 10px 0
 }
 
@@ -4219,7 +4221,7 @@ ul.additional_links li:after {
 
 .tabs_owl_pr_nx .owl-next span,
 .tabs_owl_pr_nx .owl-prev span {
-    color: #0074bd !important;
+    color: rgb(228, 121, 17) !important;
     font-weight: 500 !important;
     font-size: 40px
 }
@@ -4278,12 +4280,12 @@ ul.additional_links li:after {
 }
 
 .category_product_tab {
-    border-bottom: 2px solid #0074bd
+    border-bottom: 2px solid rgb(228, 121, 17)
 }
 
 .category_product_tab .nav-link.active {
     border-radius: 10px 10px 0 0;
-    background: #0074bd;
+    background: rgb(228, 121, 17);
     color: #fff;
     margin-bottom: 0
 }
@@ -4293,7 +4295,7 @@ ul.additional_links li:after {
 }
 
 .category_product_tab_heading_span {
-    color: #0074bd;
+    color: rgb(228, 121, 17);
     font-family: Epilogue;
     font-size: 79px;
     font-style: italic;
@@ -4313,7 +4315,7 @@ ul.additional_links li:after {
 }
 
 .category_product_tab_table .bg_blue_table {
-    background-color: #0074bd;
+    background-color: rgb(228, 121, 17);
     color: #fff;
     font-family: Epilogue;
     font-size: 18px;
@@ -4346,7 +4348,7 @@ ul.additional_links li:after {
 }
 
 .category_product_tab_table .blue_no {
-    color: #0074bd;
+    color: rgb(228, 121, 17);
     font-weight: 700;
     text-align: center;
     padding: 20px 10px
