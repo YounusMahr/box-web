@@ -45,11 +45,6 @@ import homeiconred from "../assets/front/product_icon_home_red.svg"
 import button_icon_right from '../assets/front/button_icon_right.svg'
 
 
-
-
-
-
-
 function home() {
   return (
  <>
