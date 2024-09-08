@@ -3,7 +3,14 @@ import emailicon from '../assets/front/email_icon.webp';
 import sicon from '../assets/front/search-icon.webp';
 import carticon from '../assets/front/cart_icon.svg';
 import Whatsapp from '../assets/img/whatsapp_icon.svg'
-import cardboxes from '../assets/uploads_f/cardboxe1.webp';
+import cardboxes from '../assets/img/box1.jpg';
+import box1 from '../assets/img/box2.jpg';
+import box2 from '../assets/img/box3.jpg';
+import box3 from '../assets/img/box4.jpg';
+import box4 from '../assets/img/box5.jpg';
+import box5 from '../assets/img/box3.jpg';
+import box6 from '../assets/img/box6.jpg';
+import box7 from '../assets/img/box7.jpg';
 import bottomcloser from '../assets/uploads_f/bottom-closer.png';
 import slideimage1 from '../assets/front/slide_img_3_test.webp';
 import slideimage2 from '../assets/front/slide_img_2_test.webp';
@@ -270,135 +277,116 @@ function header() {
                               <div class="col-md-6">
                                 <ul>
                                   <li class="list_TCB">
-                                    <a href="cbd-packaging/index.html"
-                                      class="mega_menu_sub_cat_name">
-                                      <img class="megamenu_img"
-                                        src="uploads_f/1720702849.CBD%20Packaging.webp"
-                                        alt="CBD Packaging" width="70"
-                                        height="70" />
+                                  <Link to='industry/card_box' className="mega_menu_sub_cat_name" >
+                                      <img
+                                        className="megamenu_img"
+                                        src={box1}
+                                        alt="Cardboard boxes ()"
+                                        width={70}
+                                        height={70}
+                                      />
                                       CBD Packaging
-                                    </a>
+                                    </Link>
                                   </li>
                                 </ul>
                               </div>
                               <div class="col-md-6">
                                 <ul>
                                   <li class="list_TCB">
-                                    <a href="cosmetic-boxes/index.html"
-                                      class="mega_menu_sub_cat_name">
-                                      <img class="megamenu_img"
-                                        src="uploads_f/1720702869.cosmetic%20boxes.webp"
-                                        alt="cosmetic boxes" width="70"
-                                        height="70" />
-                                      Cosmetic Boxes
-                                    </a>
+                                  <Link to='industry/card_box' className="mega_menu_sub_cat_name" >
+                                      <img
+                                        className="megamenu_img"
+                                        src={box2}
+                                        alt="Cardboard boxes ()"
+                                        width={70}
+                                        height={70}
+                                      />
+                                      Costmetic Boxes
+                                    </Link>
                                   </li>
                                 </ul>
                               </div>
                               <div class="col-md-6">
                                 <ul>
                                   <li class="list_TCB">
-                                    <a href="display-packaging/index.html"
-                                      class="mega_menu_sub_cat_name">
-                                      <img class="megamenu_img"
-                                        src="uploads_f/1720702901.Display%20boxes.webp"
-                                        alt="Display boxes" width="70"
-                                        height="70" />
+                                  <Link to='industry/card_box' className="mega_menu_sub_cat_name" >
+                                      <img
+                                        className="megamenu_img"
+                                        src={box3}
+                                        alt="Cardboard boxes ()"
+                                        width={70}
+                                        height={70}
+                                      />
                                       Display Packaging
-                                    </a>
+                                    </Link>
                                   </li>
                                 </ul>
                               </div>
                               <div class="col-md-6">
                                 <ul>
                                   <li class="list_TCB">
-                                    <a href="eco-friendly-boxes/index.html"
-                                      class="mega_menu_sub_cat_name">
-                                      <img class="megamenu_img"
-                                        src="uploads_f/1720703366.Eco-friendly%20boxes.webp"
-                                        alt="Eco friendly boxes" width="70"
-                                        height="70" />
+                                  <Link to='industry/card_box' className="mega_menu_sub_cat_name" >
+                                      <img
+                                        className="megamenu_img"
+                                        src={box4}
+                                        alt="Cardboard boxes ()"
+                                        width={70}
+                                        height={70}
+                                      />
                                       Eco Friendly Boxes
-                                    </a>
+                                    </Link>
                                   </li>
                                 </ul>
                               </div>
                               <div class="col-md-6">
                                 <ul>
                                   <li class="list_TCB">
-                                    <a href="food-and-beverage/index.html"
-                                      class="mega_menu_sub_cat_name">
-                                      <img class="megamenu_img"
-                                        src="uploads_f/1720703079.Food%20And%20Beverages%20Boxes.webp"
-                                        alt="Food And Beverages Boxes" width="70"
-                                        height="70" />
-                                      Food And Beverage
-                                    </a>
+                                  <Link to='industry/card_box' className="mega_menu_sub_cat_name" >
+                                      <img
+                                        className="megamenu_img"
+                                        src={box5}
+                                        alt="Cardboard boxes ()"
+                                        width={70}
+                                        height={70}
+                                      />
+                                      Food Boxes
+                                    </Link>
                                   </li>
                                 </ul>
                               </div>
                               <div class="col-md-6">
                                 <ul>
                                   <li class="list_TCB">
-                                    <a href="gift-boxes/index.html"
-                                      class="mega_menu_sub_cat_name">
-                                      <img class="megamenu_img"
-                                        src="uploads_f/1720703096.Gift%20boxes.webp"
-                                        alt="Gift boxes" width="70" height="70" />
+                                   <Link to='industry/card_box' className="mega_menu_sub_cat_name" >
+                                      <img
+                                        className="megamenu_img"
+                                        src={box6}
+                                        alt="Cardboard boxes ()"
+                                        width={70}
+                                        height={70}
+                                      />
                                       Gift Boxes
-                                    </a>
+                                    </Link>
                                   </li>
                                 </ul>
                               </div>
                               <div class="col-md-6">
                                 <ul>
                                   <li class="list_TCB">
-                                    <a href="metalized-boxes/index.html"
-                                      class="mega_menu_sub_cat_name">
-                                      <img class="megamenu_img"
-                                        src="uploads_f/1720703161.Metallized%20Boxes.webp"
-                                        alt="Metallized Boxes" width="70"
-                                        height="70" />
-                                      Metalized Boxes
-                                    </a>
+                                  <Link to='industry/card_box' className="mega_menu_sub_cat_name" >
+                                      <img
+                                        className="megamenu_img"
+                                        src={box7}
+                                        alt="Cardboard boxes ()"
+                                        width={70}
+                                        height={70}
+                                      />
+                                     Metalized Boxes
+                                    </Link>
                                   </li>
                                 </ul>
                               </div>
-                              <div class="col-md-6">
-                                <ul>
-                                  <li class="list_TCB">
-                                    <a href="retail-boxes/index.html"
-                                      class="mega_menu_sub_cat_name">
-
-
-
-
-                                      <img class="megamenu_img"
-                                        src="uploads_f/1720703179.Retail%20boxes.webp"
-                                        alt="Retail boxes" width="70" height="70" />
-                                      Retail Boxes
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="col-md-6">
-                                <ul>
-                                  <li class="list_TCB">
-                                    <a href="rigid-boxes/index.html"
-                                      class="mega_menu_sub_cat_name">
-
-
-
-
-                                      <img class="megamenu_img"
-                                        src="uploads_f/1720703203.Rigid%20boxes.webp"
-                                        alt="Rigid boxes" width="70" height="70" />
-                                      Rigid Boxes
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
+                          </div>
                             <div className="mt-4" >
                               <div className="mega_menu_sub_cat_pro_inside">
                                 <div className="">
@@ -428,6 +416,7 @@ function header() {
                                 </div>
                               </div>
                             </div>
+                            
                             <div className="text-center">
                               <button
                                 className="btn mb-4"
@@ -440,7 +429,7 @@ function header() {
                                 }}
                               >
                                 <a
-                                  href="industries/index.html"
+                                  href="industry/index.html"
                                   style={{ color: "#fff" }}
                                 >
                                   View All
