@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../components/header';
 import Footer from '../../components/footer';
+import box_left_icon from '../../assets/front/box_style_bottom_left.png'
 function box_style() {
   return (
     <div>
@@ -4744,7 +4745,7 @@ function box_style() {
       <section className="box_style">
         <div className="box_style_bottom_left">
           <img
-            src="../frontend_f/front/box_style_bottom_left.png"
+            src={box_left_icon}
             alt="box_style_bottom_left"
           />
         </div>

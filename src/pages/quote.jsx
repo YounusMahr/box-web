@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from '../components/header';
 import Footer from '../components/footer';
+
+import file_icon from '../assets/front/file_input_icon.svg'
 function quote() {
   return (
     <div>
@@ -929,7 +931,7 @@ function quote() {
                   <label htmlFor="file">
                     <img
                       style={{ marginRight: 10 }}
-                      src="../frontend_f/front/file_input_icon.svg"
+                      src={file_icon}
                       alt="file icon"
                     />
                     Choose File...

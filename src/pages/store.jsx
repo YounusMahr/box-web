@@ -1,6 +1,12 @@
 import React from 'react'
 import Header from '../components/header';
 import Footer from '../components/footer';
+import  rigidbox2 from '../assets/front/Rigid-boxes-02.webp';
+import mailerbox2 from '../assets/front/Mailer-boxes-05.webp';
+import retailerbox2 from '../assets/front/Retail-boxes-02.webp';
+import button_icon_right from "../assets/front/button_icon_right.svg"
+import button_icon_top from "../assets/front/button_icon_top.svg"
+
 function store() {
   return (
     <div>
@@ -80,7 +86,7 @@ function store() {
                 <a href="rigid-box/index.html">
                   <div className="category_imag_width">
                     <img
-                      src="../frontend_f/front/Rigid-boxes-02.webp"
+                      src={rigidbox2}
                       alt="Rigid boxes 02"
                     />
                   </div>
@@ -108,12 +114,13 @@ function store() {
                       Shop now
                       <img
                         className="show_button_icon width_15"
-                        src="../frontend_f/front/button_icon_right.svg"
+                    
+                        src={button_icon_right}
                         alt="button right"
                       />
                       <img
                         className="show_hover_icon_button width_15"
-                        src="../frontend_f/front/button_icon_top.svg"
+                        src={button_icon_top}
                         alt="button top"
                       />
                     </button>
@@ -126,7 +133,7 @@ function store() {
                 <a href="mailer-box/index.html">
                   <div className="category_imag_width">
                     <img
-                      src="../frontend_f/front/Mailer-boxes-05.webp"
+                      src={mailerbox2}
                       alt="Mailer boxes 05"
                     />
                   </div>
@@ -154,12 +161,12 @@ function store() {
                       Shop now
                       <img
                         className="show_button_icon width_15"
-                        src="../frontend_f/front/button_icon_right.svg"
+                        src={button_icon_right}
                         alt="button right"
                       />
                       <img
                         className="show_hover_icon_button width_15"
-                        src="../frontend_f/front/button_icon_top.svg"
+                        src={button_icon_top}
                         alt="button top"
                       />
                     </button>
@@ -172,7 +179,7 @@ function store() {
                 <a href="retail-box/index.html">
                   <div className="category_imag_width">
                     <img
-                      src="../frontend_f/front/Retail-boxes-02.webp"
+                      src={retailerbox2}
                       alt="Retail boxes 02"
                     />
                   </div>
@@ -200,14 +207,14 @@ function store() {
                       Shop now
                       <img
                         className="show_button_icon width_15"
-                        src="../frontend_f/front/button_icon_right.svg"
+                        src={button_icon_right}
                         alt="button right"
                         width={15}
                         height={15}
                       />
                       <img
                         className="show_hover_icon_button width_15"
-                        src="../frontend_f/front/button_icon_top.svg"
+                        src={button_icon_top}
                         alt="button top"
                         width={15}
                         height={15}

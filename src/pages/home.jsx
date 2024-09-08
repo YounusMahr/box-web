@@ -5,12 +5,50 @@ import brandline from '../assets/front/brand_line.webp';
 
 import Header from '../components/header';
 import Footer from '../components/footer';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import retailboxes from '../assets/uploads_f/1713980563.Worth-Ravishing-Custom-Retail-Boxes.webp'
 import ecoboxes from '../assets/uploads_f/1708525324.Worth-Ravishing-Custom-Eco-Friendly-Boxes.webp'
 import cardboxes from '../assets/uploads_f/1708525390.Worth-Ravishing-Custom-Cardboard-Packaging.webp'
 import rigidboxes from '../assets/uploads_f/1708525446.Worth-Ravishing-Custom-Rigid-Boxes.webp'
+
+import  structuraldesign from '../assets/uploads_f/structuraldesign.webp'
+import  graphicaldesign from '../assets/uploads_f/Graphic-Design.webp'
+import Prototyping from '../assets/uploads_f/Prototyping.webp'
+import Production from '../assets/uploads_f/Production-Management.webp'
+
+import lefticon from '../assets/front/box_top_left_icon.webp'
+import toprighticon from '../assets//front/box_top_right_icon.webp'
+import bottomiconleft from '../assets/front/box_bottom_left_icon.webp'
+import bottomiconright from '../assets/front/box_bottom_right_icon.webp'
+import Ecofriendly from '../assets/uploads_f/1710845456.Custom-Eco-Friendly-Boxes.webp'
+
+import homebanner from '../assets/front/home_banner_sale.webp'
+import salebannersvg from '../assets/front/sale_banner_icon.svg'
+import boxstyleleft from '../assets/front/box_style_bottom_left.webp'
+import  custombox from '../assets/front/the-custom-boxes-testimonial.webp'
+import  googlebox from '../assets/front/google-testimonial.webp'
+import  talking_call from '../assets/front/talking_call.webp'
+import  womentestimonial from '../assets/front/testimonial_woman.webp'
+
+import  cardboard from '../assets/uploads_f/1708085363.Cardboard-Tuckin-boxes.webp'
+import  cbdpackage from '../assets/uploads_f/1708085827.CBD-Packaging.webp'
+import cosmetic from    '../assets/uploads_f/1708526260.Cosmetic-Boxes.webp'
+import displypackage from    '../assets/uploads_f/1708085854.Display-Packaging.webp'
+import foodpackage from    '../assets/uploads_f/1708087779.food-and-beverage.webp'
+import otherproduct from    '../assets/uploads_f/1708526206.Other-Products.webp'
+
+
+import product_icon_home from "../assets/front/product_icon_home.svg"
+import homeiconred from "../assets/front/product_icon_home_red.svg"
+ import button_icon_top from '../assets/front/button_icon_top.svg'
+import button_icon_right from '../assets/front/button_icon_right.svg'
+
+
+
+
+
+
 
 function home() {
   return (
@@ -556,7 +594,7 @@ function home() {
               <div className="col-md-4 offset-md-1">
                 <div className="text-end ">
                   <img
-                    src="uploads_f/1713980884.Structural-Design.webp"
+                    src={structuraldesign}
                     alt="Structural Design"
                     className="tab_imag"
                     width={550}
@@ -611,7 +649,7 @@ function home() {
               <div className="col-md-4 offset-md-1">
                 <div className="text-end ">
                   <img
-                    src="uploads_f/1713980771.Graphic-Design.webp"
+                    src={graphicaldesign}
                     alt="Graphic Design"
                     className="tab_imag"
                     width={550}
@@ -670,7 +708,7 @@ function home() {
               <div className="col-md-4 offset-md-1">
                 <div className="text-end ">
                   <img
-                    src="uploads_f/1713980716.Prototyping%20(1).webp"
+                    src={Prototyping}
                     alt="Prototyping ()"
                     className="tab_imag"
                     width={550}
@@ -727,7 +765,7 @@ function home() {
               <div className="col-md-4 offset-md-1">
                 <div className="text-end ">
                   <img
-                    src="uploads_f/1713980828.Production-Management%20(1).webp"
+                    src={Production}
                     alt="Production Management ()"
                     className="tab_imag"
                     width={550}
@@ -792,7 +830,7 @@ function home() {
                 <a href="cardboard-packaging/index.html" aria-label="Read more">
                   <div className="_image">
                     <img
-                      src="uploads_f/1708085363.Cardboard-Tuckin-boxes.webp"
+                      src={cardboard}
                       alt="Cardboard Tuckin boxes"
                       width={170}
                       height={170}
@@ -809,15 +847,18 @@ function home() {
                     </h3>
                     <ul className="p-0" style={{ listStyleType: "none" }}>
                       <li className="list_text">
+                        
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                         
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -826,13 +867,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -841,13 +882,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -856,28 +897,23 @@ function home() {
                     </ul>
                   </a>
                   <div className="product_button">
-                    <a
-                      href="cardboard-packaging/index.html"
-                      aria-label="Read more"
-                    ></a>
-                    <a
-                      href="cardboard-packaging/index.html"
-                      aria-label="Read more"
-                    >
+                    <Link to="packaging"  aria-label="Read more"></Link>
+                    <Link to="packaging"  aria-label="Read more">
                       <button className="btn customize_btn">
                         Explore
                         <img
                           className="show_button_icon"
-                          src="frontend_f/front/button_icon_right.svg"
+                          src={button_icon_right}
                           alt="button icon"
                         />
                         <img
+                        
                           className="show_hover_icon_button"
-                          src="frontend_f/front/button_icon_top.svg"
+                          src={button_icon_top}
                           alt="button icon"
                         />
                       </button>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -890,7 +926,7 @@ function home() {
                 <a href="cbd-packaging/index.html" aria-label="Read more">
                   <div className="_image">
                     <img
-                      src="uploads_f/1708085827.CBD-Packaging.webp"
+                      src={cbdpackage}
                       alt="CBD Packaging"
                       width={170}
                       height={170}
@@ -906,13 +942,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -921,13 +957,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -936,13 +972,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -960,12 +996,12 @@ function home() {
                         Explore
                         <img
                           className="show_button_icon"
-                          src="frontend_f/front/button_icon_right.svg"
+                          src={button_icon_right}
                           alt="button icon"
                         />
                         <img
                           className="show_hover_icon_button"
-                          src="frontend_f/front/button_icon_top.svg"
+                          src={button_icon_top}
                           alt="button icon"
                         />
                       </button>
@@ -982,7 +1018,7 @@ function home() {
                 <a href="cosmetic-boxes/index.html" aria-label="Read more">
                   <div className="_image">
                     <img
-                      src="uploads_f/1708526260.Cosmetic-Boxes.webp"
+                      src={cosmetic}
                       alt="Cosmetic Boxes"
                       width={170}
                       height={170}
@@ -998,13 +1034,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1013,13 +1049,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1028,13 +1064,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1052,12 +1088,12 @@ function home() {
                         Explore
                         <img
                           className="show_button_icon"
-                          src="frontend_f/front/button_icon_right.svg"
+                          src={button_icon_right}
                           alt="button icon"
                         />
                         <img
                           className="show_hover_icon_button"
-                          src="frontend_f/front/button_icon_top.svg"
+                          src={button_icon_top}
                           alt="button icon"
                         />
                       </button>
@@ -1074,7 +1110,7 @@ function home() {
                 <a href="display-packaging/index.html" aria-label="Read more">
                   <div className="_image">
                     <img
-                      src="uploads_f/1708085854.Display-Packaging.webp"
+                      src={displypackage}
                       alt="Display Packaging"
                       width={170}
                       height={170}
@@ -1090,13 +1126,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1105,13 +1141,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1120,13 +1156,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1147,12 +1183,12 @@ function home() {
                         Explore
                         <img
                           className="show_button_icon"
-                          src="frontend_f/front/button_icon_right.svg"
+                          src={button_icon_right}
                           alt="button icon"
                         />
                         <img
                           className="show_hover_icon_button"
-                          src="frontend_f/front/button_icon_top.svg"
+                          src={button_icon_top}
                           alt="button icon"
                         />
                       </button>
@@ -1172,7 +1208,7 @@ function home() {
                 <a href="eco-friendly-boxes/index.html" aria-label="Read more">
                   <div className="_image">
                     <img
-                      src="uploads_f/1708087684.Ecofriendly-Boxes.webp"
+                      src={ecoboxes}
                       alt="Ecofriendly Boxes"
                       width={170}
                       height={170}
@@ -1191,13 +1227,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1206,13 +1242,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1221,13 +1257,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1248,12 +1284,12 @@ function home() {
                         Explore
                         <img
                           className="show_button_icon"
-                          src="frontend_f/front/button_icon_right.svg"
+                          src={button_icon_right}
                           alt="button icon"
                         />
                         <img
                           className="show_hover_icon_button"
-                          src="frontend_f/front/button_icon_top.svg"
+                          src={button_icon_top}
                           alt="button icon"
                         />
                       </button>
@@ -1270,7 +1306,7 @@ function home() {
                 <a href="food-and-beverage/index.html" aria-label="Read more">
                   <div className="_image">
                     <img
-                      src="uploads_f/1708087779.food-and-beverage.webp"
+                      src={foodpackage}
                       alt="food and beverage"
                       width={170}
                       height={170}
@@ -1286,13 +1322,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1301,13 +1337,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1316,13 +1352,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1343,12 +1379,12 @@ function home() {
                         Explore
                         <img
                           className="show_button_icon"
-                          src="frontend_f/front/button_icon_right.svg"
+                          src={button_icon_right}
                           alt="button icon"
                         />
                         <img
                           className="show_hover_icon_button"
-                          src="frontend_f/front/button_icon_top.svg"
+                          src={button_icon_top}
                           alt="button icon"
                         />
                       </button>
@@ -1365,7 +1401,7 @@ function home() {
                 <a href="other-products/index.html" aria-label="Read more">
                   <div className="_image">
                     <img
-                      src="uploads_f/1708526206.Other-Products.webp"
+                      src={otherproduct}
                       alt="Other Products"
                       width={170}
                       height={170}
@@ -1381,13 +1417,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1396,13 +1432,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1411,13 +1447,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1435,12 +1471,12 @@ function home() {
                         Explore
                         <img
                           className="show_button_icon"
-                          src="frontend_f/front/button_icon_right.svg"
+                          src={button_icon_right}
                           alt="button icon"
                         />
                         <img
                           className="show_hover_icon_button"
-                          src="frontend_f/front/button_icon_top.svg"
+                          src={button_icon_top}
                           alt="button icon"
                         />
                       </button>
@@ -1457,7 +1493,7 @@ function home() {
                 <a href="retail-boxes/index.html" aria-label="Read more">
                   <div className="_image">
                     <img
-                      src="uploads_f/1708526021.Retail-Boxes.webp"
+                      src={retailboxes}
                       alt="Retail Boxes"
                       width={170}
                       height={170}
@@ -1473,13 +1509,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1488,13 +1524,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1503,13 +1539,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1527,12 +1563,12 @@ function home() {
                         Explore
                         <img
                           className="show_button_icon"
-                          src="frontend_f/front/button_icon_right.svg"
+                          src={button_icon_right}
                           alt="button icon"
                         />
                         <img
                           className="show_hover_icon_button"
-                          src="frontend_f/front/button_icon_top.svg"
+                          src={button_icon_top}
                           alt="button icon"
                         />
                       </button>
@@ -1549,7 +1585,7 @@ function home() {
                 <a href="rigid-boxes/index.html" aria-label="Read more">
                   <div className="_image">
                     <img
-                      src="uploads_f/1708526132.Rigid-Boxes.webp"
+                      src={rigidboxes}
                       alt="Rigid Boxes"
                       width={170}
                       height={170}
@@ -1565,13 +1601,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1580,13 +1616,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1595,13 +1631,13 @@ function home() {
                       <li className="list_text">
                         <img
                           className="show_blue"
-                          src="frontend_f/front/product_icon_home.svg"
+                          src={product_icon_home}
                           alt="blue icon"
                           style={{ marginRight: 7 }}
                         />
                         <img
                           className="show_red_hover"
-                          src="frontend_f/front/product_icon_home_red.svg"
+                          src={homeiconred}
                           alt="red icon"
                           style={{ marginRight: 7 }}
                         />
@@ -1616,12 +1652,12 @@ function home() {
                         Explore
                         <img
                           className="show_button_icon"
-                          src="frontend_f/front/button_icon_right.svg"
+                          src={button_icon_right}
                           alt="button icon"
                         />
                         <img
                           className="show_hover_icon_button"
-                          src="frontend_f/front/button_icon_top.svg"
+                          src={button_icon_top}
                           alt="button icon"
                         />
                       </button>
@@ -1648,7 +1684,7 @@ function home() {
     <section className="home_product_image_section">
       <div className="box_top_left_icon">
         <img
-          src="frontend_f/front/box_top_left_icon.webp"
+          src={lefticon}
           alt="box top"
           width={132}
           height={125}
@@ -1656,7 +1692,7 @@ function home() {
       </div>
       <div className="box_top_right_icon">
         <img
-          src="frontend_f/front/box_top_right_icon.webp"
+          src={toprighticon}
           alt="box right"
           width={300}
           height={64}
@@ -1664,13 +1700,13 @@ function home() {
       </div>
       <div className="box_bottom_right_icon">
         <img
-          src="frontend_f/front/box_bottom_right_icon.webp"
+          src={bottomiconright}
           alt="box bottom"
         />
       </div>
       <div className="box_bottom_left_icon">
         <img
-          src="frontend_f/front/box_bottom_left_icon.webp"
+          src={bottomiconleft}
           alt="box left"
           width={262}
           height={396}
@@ -1683,7 +1719,7 @@ function home() {
               <div className="col-md-6 col-lg-6 col-sm-12 col-12">
                 <div className="">
                   <img
-                    src="uploads_f/1710845517.Custom-Retail-Boxes.webp"
+                    src={retailboxes}
                     alt="Custom Retail Boxes"
                   />
                 </div>
@@ -1773,7 +1809,7 @@ function home() {
               <div className="col-md-6 col-lg-6 col-sm-12 col-12">
                 <div className="">
                   <img
-                    src="uploads_f/1710845456.Custom-Eco-Friendly-Boxes.webp"
+                    src={Ecofriendly}
                     alt="Custom Eco Friendly Boxes"
                   />
                 </div>
@@ -1816,7 +1852,7 @@ function home() {
               <div className="col-md-6 col-lg-6 col-sm-12 col-12">
                 <div className="">
                   <img
-                    src="uploads_f/1710845285.Custom-Rigid-Boxes.webp"
+                    src={rigidboxes}
                     alt="Custom Rigid Boxes"
                   />
                 </div>
@@ -1932,7 +1968,7 @@ function home() {
                 </div>
                 <div className="sale_banner_icon">
                   <img
-                    src="frontend_f/front/sale_banner_icon.svg"
+                    src={salebannersvg}
                     alt="sale banner"
                     width={107}
                     height={101}
@@ -1943,7 +1979,7 @@ function home() {
             <div className="col-md-4 col-sm-6 col-12">
               <div className="sale_banner_img">
                 <img
-                  src="frontend_f/front/home_banner_sale.webp"
+                  src={homebanner}
                   alt="home banner sale"
                   width={415}
                   height={427}
@@ -1972,7 +2008,7 @@ function home() {
     <section className="box_style">
       <div className="box_style_bottom_left">
         <img
-          src="frontend_f/front/box_style_bottom_left.webp"
+          src={boxstyleleft}
           alt="box style bottom"
         />
       </div>
@@ -2025,13 +2061,13 @@ function home() {
                     Explore
                     <img
                       className="show_button_icon"
-                      src="frontend_f/front/button_icon_right.svg"
+                      src={button_icon_right}
                       alt="button right icon"
                       style={{ width: 15 }}
                     />
                     <img
                       className="show_hover_icon_button"
-                      src="frontend_f/front/button_icon_top.svg"
+                      src={button_icon_top}
                       alt="button top icon"
                       style={{ width: 15 }}
                     />
@@ -2065,13 +2101,13 @@ function home() {
                     Explore
                     <img
                       className="show_button_icon"
-                      src="frontend_f/front/button_icon_right.svg"
+                      src={button_icon_right}
                       alt="button right icon"
                       style={{ width: 15 }}
                     />
                     <img
                       className="show_hover_icon_button"
-                      src="frontend_f/front/button_icon_top.svg"
+                      src={button_icon_top}
                       alt="button top icon"
                       style={{ width: 15 }}
                     />
@@ -2105,13 +2141,13 @@ function home() {
                     Explore
                     <img
                       className="show_button_icon"
-                      src="frontend_f/front/button_icon_right.svg"
+                      src={button_icon_right}
                       alt="button right icon"
                       style={{ width: 15 }}
                     />
                     <img
                       className="show_hover_icon_button"
-                      src="frontend_f/front/button_icon_top.svg"
+                      src={button_icon_top}
                       alt="button top icon"
                       style={{ width: 15 }}
                     />
@@ -2145,13 +2181,13 @@ function home() {
                     Explore
                     <img
                       className="show_button_icon"
-                      src="frontend_f/front/button_icon_right.svg"
+                      src={button_icon_right}
                       alt="button right icon"
                       style={{ width: 15 }}
                     />
                     <img
                       className="show_hover_icon_button"
-                      src="frontend_f/front/button_icon_top.svg"
+                      src={button_icon_top}
                       alt="button top icon"
                       style={{ width: 15 }}
                     />
@@ -2185,13 +2221,13 @@ function home() {
                     Explore
                     <img
                       className="show_button_icon"
-                      src="frontend_f/front/button_icon_right.svg"
+                      src={button_icon_right}
                       alt="button right icon"
                       style={{ width: 15 }}
                     />
                     <img
                       className="show_hover_icon_button"
-                      src="frontend_f/front/button_icon_top.svg"
+                      src={button_icon_top}
                       alt="button top icon"
                       style={{ width: 15 }}
                     />
@@ -2225,13 +2261,13 @@ function home() {
                     Explore
                     <img
                       className="show_button_icon"
-                      src="frontend_f/front/button_icon_right.svg"
+                      src={button_icon_right}
                       alt="button right icon"
                       style={{ width: 15 }}
                     />
                     <img
                       className="show_hover_icon_button"
-                      src="frontend_f/front/button_icon_top.svg"
+                      src={button_icon_top}
                       alt="button top icon"
                       style={{ width: 15 }}
                     />
@@ -2263,13 +2299,13 @@ function home() {
                     Explore
                     <img
                       className="show_button_icon"
-                      src="frontend_f/front/button_icon_right.svg"
+                      src={button_icon_right}
                       alt="button right icon"
                       style={{ width: 15 }}
                     />
                     <img
                       className="show_hover_icon_button"
-                      src="frontend_f/front/button_icon_top.svg"
+                      src={button_icon_top}
                       alt="button top icon"
                       style={{ width: 15 }}
                     />
@@ -2466,7 +2502,7 @@ function home() {
           <div className="col-md-5 col-sm-6 col-12">
             <div className="text-center testimonial_woman on_mobile_d_none_button">
               <img
-                src="frontend_f/front/testimonial_woman.webp"
+                src={womentestimonial}
                 alt="testimonial women"
                 width={580}
                 height={556}
@@ -2485,7 +2521,7 @@ function home() {
                   id="nav-home-tab"
                 >
                   <img
-                    src="frontend_f/front/the-custom-boxes-testimonial.webp"
+                    src={custombox}
                     width={97}
                     height={36}
                     className=""
@@ -2495,7 +2531,7 @@ function home() {
                 <button className="nav-link testimonial_btn">
                   <a href="https://bit.ly/3HtBJOb">
                     <img
-                      src="frontend_f/front/google-testimonial.webp"
+                      src={googlebox}
                       width={117}
                       height={36}
                       className=""
@@ -3746,7 +3782,7 @@ function home() {
             <div className="col-md-5 col-sm-6 col-12">
               <div className="call_banner_img_position">
                 <img
-                  src="frontend_f/front/talking_call.webp"
+                  src={talking_call}
                   alt="talking call"
                   width={415}
                   height={448}
@@ -3957,13 +3993,13 @@ function home() {
                       Explore
                       <img
                         className="show_button_icon"
-                        src="frontend_f/front/button_icon_right.svg"
+                        src={button_icon_right}
                         alt="button icon"
                         style={{ width: 15 }}
                       />
                       <img
                         className="show_hover_icon_button"
-                        src="frontend_f/front/button_icon_top.svg"
+                        src={button_icon_top}
                         alt="button icon"
                         style={{ width: 15 }}
                       />
@@ -4041,13 +4077,13 @@ function home() {
                       Explore
                       <img
                         className="show_button_icon"
-                        src="frontend_f/front/button_icon_right.svg"
+                        src={button_icon_right}
                         alt="button icon"
                         style={{ width: 15 }}
                       />
                       <img
                         className="show_hover_icon_button"
-                        src="frontend_f/front/button_icon_top.svg"
+                        src={button_icon_top}
                         alt="button icon"
                         style={{ width: 15 }}
                       />
@@ -4124,13 +4160,13 @@ function home() {
                       Explore
                       <img
                         className="show_button_icon"
-                        src="frontend_f/front/button_icon_right.svg"
+                        src={button_icon_right}
                         alt="button icon"
                         style={{ width: 15 }}
                       />
                       <img
                         className="show_hover_icon_button"
-                        src="frontend_f/front/button_icon_top.svg"
+                        src={button_icon_top}
                         alt="button icon"
                         style={{ width: 15 }}
                       />
@@ -4207,13 +4243,13 @@ function home() {
                       Explore
                       <img
                         className="show_button_icon"
-                        src="frontend_f/front/button_icon_right.svg"
+                        src={button_icon_right}
                         alt="button icon"
                         style={{ width: 15 }}
                       />
                       <img
                         className="show_hover_icon_button"
-                        src="frontend_f/front/button_icon_top.svg"
+                        src={button_icon_top}
                         alt="button icon"
                         style={{ width: 15 }}
                       />
@@ -4290,13 +4326,13 @@ function home() {
                       Explore
                       <img
                         className="show_button_icon"
-                        src="frontend_f/front/button_icon_right.svg"
+                        src={button_icon_right}
                         alt="button icon"
                         style={{ width: 15 }}
                       />
                       <img
                         className="show_hover_icon_button"
-                        src="frontend_f/front/button_icon_top.svg"
+                        src={button_icon_top}
                         alt="button icon"
                         style={{ width: 15 }}
                       />
@@ -4374,13 +4410,13 @@ function home() {
                       Explore
                       <img
                         className="show_button_icon"
-                        src="frontend_f/front/button_icon_right.svg"
+                        src={button_icon_right}
                         alt="button icon"
                         style={{ width: 15 }}
                       />
                       <img
                         className="show_hover_icon_button"
-                        src="frontend_f/front/button_icon_top.svg"
+                        src={button_icon_top}
                         alt="button icon"
                         style={{ width: 15 }}
                       />

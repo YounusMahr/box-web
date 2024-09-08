@@ -1,6 +1,9 @@
 import React from 'react'
 import Header from '../../components/header';
 import Footer from '../../components/footer';
+
+import box_style_bottom_left  from "../../assets/front/box_style_bottom_left.png"
+
 function industry() {
   return (
     <div>
@@ -6592,7 +6595,7 @@ function industry() {
       <section className="box_style">
         <div className="box_style_bottom_left">
           <img
-            src="../frontend_f/front/box_style_bottom_left.png"
+            src={box_style_bottom_left}
             alt="box_style_bottom_left"
           />
         </div>

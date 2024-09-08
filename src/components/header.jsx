@@ -15,9 +15,33 @@ import Links from './links';
 
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef,useState } from 'react';
 function header() {
+  const [categories, setCategories] = useState([]);
   useEffect(() => {
+    const fetchCategories = () => {
+      $.ajax({
+        url: 'http://127.0.0.1:8000/api/get-category',
+        method: 'GET',
+        success: (data) => {
+          if (data.status && Array.isArray(data.categorys)) {
+            setCategories(data.categorys); // Update with the 'categorys' array
+          } else {
+            setCategories([]); // Handle unexpected data format
+          }
+        },
+        error: (xhr, status, error) => {
+          console.error('Error fetching data:', error);
+        },
+      });
+    };
+
+    fetchCategories();
+  }, []);
+
+
+  useEffect(() => {
+
     // Sticky nav
 var $headerStick = $('.Sticky');
 $(window).on("scroll", function () {
@@ -105,9 +129,6 @@ $(window).on("scroll", function () {
 
   return (
     <>
-
-
-
     <header className="version_1">
   <div className="top-bar-bg">
     <div className="container">
@@ -126,7 +147,7 @@ $(window).on("scroll", function () {
                 href="mailto:support@thecustomboxes.com"
                 style={{ color: "#ffffff", marginLeft: 10 }}
               >
-                support@thecustomboxes.com
+                support@themailerboxes.com
               </a>
             </div>
           </div>
@@ -216,10 +237,18 @@ $(window).on("scroll", function () {
               </a>
             </div>
             <ul>
-              <li>
+               <li>
               <Link to="/">Home</Link>
               </li>
-              <li className="megamenu submenu">
+            {categories.length > 0 ? (
+          categories.map((category) => (
+            <li key={category.id}><Link to={category.slug}>{category.name}</Link></li>
+          ))
+        ) : (
+          <li>No categories available</li>
+        )}
+             
+              {/* <li className="megamenu submenu">
                 <Link to='industry'>Industries</Link>
                 <div className="menu-wrapper">
                   <div className="row">
@@ -619,7 +648,7 @@ $(window).on("scroll", function () {
               </li>
               <li>
               <Link to="contact">Contact Us</Link>
-              </li>
+              </li> */}
               <li>
                 <a href="#">
                   <img

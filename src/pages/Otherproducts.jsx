@@ -2,6 +2,8 @@ import React from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 
+import box_icon from '../assets/front/box_style_bottom_left.png'
+
 function Otherproducts() {
   return (
     <div>
@@ -780,7 +782,7 @@ function Otherproducts() {
     <section className="box_style">
       <div className="box_style_bottom_left">
         <img
-          src="../frontend_f/front/box_style_bottom_left.png"
+          src={box_icon}
           alt="box_style_bottom_left"
         />
       </div>
